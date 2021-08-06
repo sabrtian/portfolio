@@ -22,7 +22,7 @@ body {
 }
 
 	/* MOBILE */
-	@media (max-width: 767px) {
+	@media (max-width: 649px) {
 		h1 {
 			font-family: FreightBig; 
 			font-weight: normal;  
@@ -60,14 +60,23 @@ body {
 			z-index: 10;
 			top: 10px;
 		}
+
+		.container {
+			padding-bottom: 130px; 
+			padding-left: 100px; 
+			padding-right: 100px; 
+			margin-left: auto;
+			margin-right: auto;
+			z-index: 0;
+		}
 	}
 
 	/* TABLET */
-	@media (min-width: 768px) {
+	@media (min-width: 650px) {
 		h1 {
 			font-family: FreightBig; 
 			font-weight: normal;  
-			font-size: 280%;
+			font-size: 250%;
 		}
 
 		h2 {
@@ -86,7 +95,7 @@ body {
 		.p-long {
 			font-family: PTSans;
 			font-weight: normal;  
-			font-size: 85%;
+			font-size: %;
 			line-height: 167%;
 			letter-spacing: 0.03em;
 		}
@@ -101,10 +110,19 @@ body {
 			z-index: 10;
 			top: 10px;
 		}
+
+		.container {
+			padding-bottom: 130px; 
+			padding-left: 100px; 
+			padding-right: 100px; 
+			margin-left: auto;
+			margin-right: auto;
+			z-index: 0;
+		}
 	}
 
 	/* DESKTOP */
-	@media (min-width: 1012px) {
+	@media (min-width: 800px) {
 		h1 {
 			font-family: FreightBig; 
 			font-weight: normal;  
@@ -142,6 +160,15 @@ body {
 			z-index: 10;
 			top: 10px;
 		}
+
+		.container {
+			padding-bottom: 130px; 
+			padding-left: 100px; 
+			padding-right: 100px; 
+			margin-left: auto;
+			margin-right: auto;
+			z-index: 0;
+		}
 	}
 
 a:link {
@@ -161,22 +188,14 @@ a:hover {
 }
 
 	/* MOBILE */
-	@media (max-width: 767px) {
-		.container {
-			padding-bottom: 130px; 
-			padding-left: 100px; 
-			padding-right: 100px; 
-			margin-left: auto;
-			margin-right: auto;
-			z-index: 0;
-		}
-
+	@media (max-width: 640px) {
 		.intro {
-			/*max-height: 50vh;*/
+			/*max-height: 100vh;*/
 			padding-left: 10px;
 			padding-right: 10px;
 			text-align: center;
-			padding-top: 30px;
+			/*padding-top: 30px;*/
+			padding-top: 10vh;
 			padding-bottom: 30px;
 		}
 
@@ -198,22 +217,13 @@ a:hover {
 	}
 
 	/* DESKTOP */
-	@media (min-width: 768px) {
-		.container {
-			padding-bottom: 130px; 
-			padding-left: 170px; 
-			padding-right: 170px; 
-			margin-left: auto;
-			margin-right: auto;
-			z-index: 0;
-		}
-
+	@media (min-width: 641px) {
 		.intro {
 			min-height: 50vh;
-			padding-left: 50px;
-			padding-right: 50px;
+			padding-left: 70px;
+			padding-right: 70px;
 			text-align: center;
-			padding-top: 130px;
+			padding-top: 10vh;
 		}
 
 		.home-grid1 {
@@ -314,7 +324,7 @@ video {
 }
 
 	/* MOBILE */
-	@media (max-width: 767px) {
+	@media (max-width: 640px) {
 		.description {
 			padding-top: 30px;
 			padding-bottom: 50px;
@@ -372,7 +382,7 @@ video {
 	}
 
 	/* DESKTOP */
-	@media (min-width: 768px) {
+	@media (min-width: 641px) {
 		.description {
 			padding-top: 30px;
 			padding-bottom: 50px;
@@ -439,7 +449,7 @@ video {
 }
 
 	/* MOBILE */
-	@media (max-width: 767px) {
+	@media (max-width: 640px) {
 		.about {
 			display: block;
 			width: 80%;
@@ -451,7 +461,7 @@ video {
 	}
 
 	/* DESKTOP */
-	@media (min-width: 768px) {
+	@media (min-width: 641px) {
 		.about {
 			display: block;
 			width: 30%;
