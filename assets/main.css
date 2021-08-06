@@ -11,6 +11,12 @@
 	font-style: normal; 
 }
 
+@font-face {
+	src: url(fonts/PTSans-Regular.ttf);
+	font-family: PTSans; 
+	font-style: normal; 
+}
+
 body {
 	background-color: #FDFDFD;
 }
@@ -32,6 +38,14 @@ p {
 	font-weight: normal;  
 	font-size: 100%;
 	line-height: 167%;
+}
+
+.p-long {
+	font-family: PTSans;
+	font-weight: normal;  
+	font-size: 100%;
+	line-height: 167%;
+	letter-spacing: 0.03em;
 }
 
 a:link {
@@ -176,6 +190,10 @@ video {
 	padding-bottom: 20px;
 	text-align: center;
 	align-items: end;
+}
+
+.padding-b {
+	margin-bottom: 80px;
 }
 
 .home-grid2 {
