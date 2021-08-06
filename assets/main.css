@@ -22,7 +22,7 @@ body {
 }
 
 	/* MOBILE */
-	@media (max-width: 649px) {
+	@media (max-width: 749px) {
 		h1 {
 			font-family: FreightBig; 
 			font-weight: normal;  
@@ -72,7 +72,7 @@ body {
 	}
 
 	/* TABLET */
-	@media (min-width: 650px) {
+	@media (min-width: 750px) {
 		h1 {
 			font-family: FreightBig; 
 			font-weight: normal;  
@@ -122,11 +122,11 @@ body {
 	}
 
 	/* DESKTOP */
-	@media (min-width: 800px) {
+	@media (min-width: 950px) {
 		h1 {
 			font-family: FreightBig; 
 			font-weight: normal;  
-			font-size: 350%;
+			font-size: 300%;
 		}
 
 		h2 {
@@ -163,8 +163,8 @@ body {
 
 		.container {
 			padding-bottom: 130px; 
-			padding-left: 100px; 
-			padding-right: 100px; 
+			padding-left: 170px; 
+			padding-right: 170px; 
 			margin-left: auto;
 			margin-right: auto;
 			z-index: 0;
@@ -337,10 +337,6 @@ video {
 			grid-template-columns: 1fr 1fr;
 			grid-column-gap: 10px;
 			grid-row-gap: 10px;
-		}
-
-		.grid-2 {
-
 		}
 
 		.sh-grid {
