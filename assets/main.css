@@ -50,6 +50,14 @@ body {
 			letter-spacing: 0.03em;
 		}
 
+		li {
+			font-family: PTSans;
+			font-weight: normal;  
+			font-size: 75%;
+			line-height: 167%;
+			letter-spacing: 0.03em;
+		}
+
 		.header {
 			padding-left: 10px;
 			padding-right: 10px;
@@ -100,6 +108,14 @@ body {
 			letter-spacing: 0.03em;
 		}
 
+		li {
+			font-family: PTSans;
+			font-weight: normal;  
+			font-size: %;
+			line-height: 167%;
+			letter-spacing: 0.03em;
+		}
+
 		.header {
 			padding-left: 30px;
 			padding-right: 30px;
@@ -140,6 +156,14 @@ body {
 			font-weight: normal;  
 			font-size: 100%;
 			line-height: 167%;
+		}
+
+		li {
+			font-family: PTSans;
+			font-weight: normal;  
+			font-size: 100%;
+			line-height: 167%;
+			letter-spacing: 0.03em;
 		}
 
 		.p-long {
