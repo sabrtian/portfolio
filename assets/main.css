@@ -285,6 +285,16 @@ a:hover {
 			align-items: end;
 		}
 
+		.home-grid4 {
+			display: grid;
+			grid-template-columns: 25% 25% 25% 25%;
+			grid-column-gap: 80px;
+			padding: 30px;
+			padding-bottom: 30px;
+			text-align: center;
+			align-items: end;
+		}
+
 		.single-image {
 			margin-right: auto;
 			margin-left: auto;
@@ -384,6 +394,13 @@ video {
 			grid-row-gap: 10px;
 		}
 
+		.grid4 {
+			display: grid;
+			grid-template-columns: 25% 25% 25% 25%;
+			grid-column-gap: 10px;
+			grid-row-gap: 10px;
+		}
+
 		.sh-grid {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
@@ -434,6 +451,13 @@ video {
 		.grid2 {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
+			grid-column-gap: 10px;
+			grid-row-gap: 10px;
+		}
+
+		.grid4 {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
 			grid-column-gap: 10px;
 			grid-row-gap: 10px;
 		}
