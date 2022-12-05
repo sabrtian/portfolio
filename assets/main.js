@@ -1,5 +1,5 @@
-// $(function() {
-// 	document.addEventListener('contextmenu', function(e) {
-// 	  e.preventDefault();
-// 	});
-// });
+$(function() {
+	document.addEventListener('contextmenu', function(e) {
+	  e.preventDefault();
+	});
+});
