@@ -19,6 +19,7 @@
 
 body {
 	background-color: #FDFDFD;
+	padding: 10px;
 }
 
 	/* MOBILE */
@@ -33,6 +34,33 @@ body {
 			font-family: FreightBig;
 			font-weight: normal;  
 			font-size: 130%;
+		}
+
+		h3 {
+			font-family: FreightBig;
+			font-weight: normal;  
+			font-size: 100%;
+			width: 30vw;
+		}
+
+		h4 {
+			font-family: FreightBig;
+			font-weight: normal;  
+			font-size: 100%;
+		}
+
+		h5 {
+			font-family: FreightBig;
+			font-weight: normal;  
+			font-size: 100%;
+		}
+
+		.intro-about {
+			width: 55vw;
+		}
+
+		.outro-about {
+			width: 40vw;
 		}
 
 		p {
@@ -56,6 +84,15 @@ body {
 			font-size: 75%;
 			line-height: 167%;
 			letter-spacing: 0.03em;
+		}
+
+		button {
+			padding: 20px;
+			background-color: white;
+			border: 1px solid black;
+			font-family: Anonymous;
+			font-size: 75%;
+			cursor: pointer;
 		}
 
 		.header {
@@ -93,6 +130,33 @@ body {
 			font-size: 175%;
 		}
 
+		h3 {
+			font-family: FreightBig;
+			font-weight: normal;  
+			font-size: 150%;
+			width: 30vw;
+		}
+
+		h4 {
+			font-family: FreightBig;
+			font-weight: normal;  
+			font-size: 150%;
+		}
+
+		h5 {
+			font-family: FreightBig;
+			font-weight: normal;  
+			font-size: 100%;
+		}
+
+		.intro-about {
+			width: 55vw;
+		}
+
+		.outro-about {
+			width: 40vw;
+		}
+
 		p {
 			font-family: Anonymous; 
 			font-weight: normal;  
@@ -114,6 +178,15 @@ body {
 			font-size: %;
 			line-height: 167%;
 			letter-spacing: 0.03em;
+		}
+
+		button {
+			padding: 20px;
+			background-color: white;
+			border: 1px solid black;
+			font-family: Anonymous;
+			font-size: 85%;
+			cursor: pointer;
 		}
 
 		.header {
@@ -142,13 +215,40 @@ body {
 		h1 {
 			font-family: FreightBig; 
 			font-weight: normal;  
-			font-size: 300%;
+			font-size: 350%;
 		}
 
 		h2 {
 			font-family: FreightBig;
 			font-weight: normal;  
 			font-size: 250%;
+		}
+
+		h3 {
+			font-family: FreightBig;
+			font-weight: normal;  
+			font-size: 200%;
+			width: 30vw;
+		}
+
+		h4 {
+			font-family: FreightBig;
+			font-weight: normal;  
+			font-size: 200%;
+		}
+
+		h5 {
+			font-family: FreightBig;
+			font-weight: normal;  
+			font-size: 140%;
+		}
+
+		.intro-about {
+			width: 55vw;
+		}
+
+		.outro-about {
+			width: 40vw;
 		}
 
 		p {
@@ -166,6 +266,15 @@ body {
 			letter-spacing: 0.03em;
 		}
 
+		button {
+			padding: 20px;
+			background-color: white;
+			border: 1px solid black;
+			font-family: Anonymous;
+			font-size: 100%;
+			cursor: pointer;
+		}
+
 		.p-long {
 			font-family: PTSans;
 			font-weight: normal;  
@@ -179,7 +288,7 @@ body {
 			padding-right: 30px;
 
 			display: grid;
-			grid-template-columns: 20% 20% 20% 20% 20%;
+			grid-template-columns: 42% 42% 5% 5% 5%;
 			position: sticky;
 			z-index: 10;
 			top: 10px;
@@ -214,13 +323,12 @@ a:hover {
 	/* MOBILE */
 	@media (max-width: 640px) {
 		.intro {
-			/*max-height: 100vh;*/
 			padding-left: 10px;
 			padding-right: 10px;
-			text-align: center;
-			/*padding-top: 30px;*/
-			padding-top: 10vh;
+			text-align: left;
+			padding-top: 35vh;
 			padding-bottom: 30px;
+			width: 55vw;
 		}
 
 		.home-griditem {
@@ -243,11 +351,10 @@ a:hover {
 	/* DESKTOP */
 	@media (min-width: 641px) {
 		.intro {
-			/*min-height: 50vh;*/
 			padding-left: 70px;
 			padding-right: 70px;
-			text-align: center;
-			padding-top: 10vh;
+			text-align: left;
+			padding-top: 15vh;
 			padding-bottom: 120px;
 		}
 
@@ -257,7 +364,7 @@ a:hover {
 			grid-column-gap: 30px;
 			padding-bottom: 30px;
 			text-align: center;
-			align-items: end;
+			align-items: center;
 		}
 
 		.padding-b {
@@ -304,11 +411,25 @@ a:hover {
 			padding-top: 10px;
 			padding-bottom: 10px;
 		}
+
+		.home-griditem {
+			padding-top: 30px;
+			text-align: center;
+		}
 	}
+
+.home-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.home-row-item {
+	padding-right: 20px;
+}
 
 .home-grid0 {
 	paddding-top: 100px;
-	padding-bottom: 50px;
 }
 
 .footer {
@@ -379,7 +500,7 @@ video {
 }
 
 	/* MOBILE */
-	@media (max-width: 640px) {
+	@media (max-width: 951px) {
 		.description {
 			padding-top: 30px;
 			padding-bottom: 50px;
@@ -392,6 +513,14 @@ video {
 			grid-template-columns: 1fr 1fr;
 			grid-column-gap: 10px;
 			grid-row-gap: 10px;
+		}
+
+		.grid3 {
+			align-content: center;
+		}
+
+		.grid3-element {
+			padding: 20px;
 		}
 
 		.grid4 {
@@ -455,6 +584,14 @@ video {
 			grid-row-gap: 10px;
 		}
 
+		.grid3 {
+			display: flex;
+			justify-content: center;
+			grid-template-columns: 33% 33% 33%;
+			grid-column-gap: 10px;
+			grid-row-gap: 10px;
+		}
+
 		.grid4 {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -507,32 +644,65 @@ video {
 	}
 
 /* ABOUT PAGE */
-.row {
+.links {
+	line-height: 0px;
+}
+
+.clients-about {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
+.section {
+	margin: 10%;
+}
+
+.about {
+	display: block;
+	width: 100%;
+	padding-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 	/* MOBILE */
-	@media (max-width: 640px) {
-		.about {
+	@media (max-width: 750px) {
+		/*.about {
 			display: block;
-			width: 80%;
+			width: 100%;
 			padding-top: 10px;
 			padding-bottom: 30px;
 			margin-left: auto;
 			margin-right: auto;
+		}*/
+		.footer-about {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-end;
 		}
 	}
 
 	/* DESKTOP */
-	@media (min-width: 641px) {
-		.about {
+	@media (min-width: 751px) {
+		/*.about {
 			display: block;
-			width: 30%;
+			width: 100%;
 			padding-top: 10px;
 			padding-bottom: 30px;
 			margin-left: auto;
 			margin-right: auto;
+		}*/
+		.footer-about {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		.row {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
 		}
 	}
