@@ -371,6 +371,13 @@ a:hover {
 			margin-bottom: 80px;
 		}
 
+		.home-grid0 {
+			padding: 50px;
+			padding-bottom: 80px;
+			text-align: center;
+			align-items: end;
+		}
+
 		.home-grid2 {
 			display: grid;
 			grid-template-columns: 50% 50%;
@@ -517,6 +524,10 @@ video {
 
 		.grid3 {
 			align-content: center;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-column-gap: 10px;
+			grid-row-gap: 10px;
 		}
 
 		.grid3-element {
