@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+<title>Heart of Valley's Delight — Sabrina Tian</title>
+<link rel="stylesheet" href="../styles/tokens.css">
+<link rel="stylesheet" href="../styles/base.css">
+<link rel="stylesheet" href="../styles/project.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Sabrina Tian</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Work</a></li>
+    <li><a href="../about.html">About</a></li>
+    <li><a href="mailto:sabrina.c.tian@gmail.com">Contact ↗</a></li>
+  </ul>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"><span class="theme-icon-moon">☽</span><span class="theme-icon-sun">☀</span></button>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html" onclick="toggleMenu()">Work</a>
+  <a href="../about.html" onclick="toggleMenu()">About</a>
+  <a href="mailto:sabrina.c.tian@gmail.com" onclick="toggleMenu()">Contact ↗</a>
+</div>
+
+<header class="project-header">
+  <div>
+    <a href="../index.html" class="back-link">← All work</a>
+    <span class="project-eyebrow">Biological Design — University of Pennsylvania</span>
+    <h1 class="project-h1"><em>Heart of</em><br>Valley's Delight</h1>
+    <p class="project-intro">
+      San Jose is known as the heart of Silicon Valley — a place of innovation, tech, and growth.
+      Yet poverty and food inequality are still prevalent, propelling health disparities throughout
+      the Bay Area. This project uses biological design and community organizing to propose
+      a more equitable food future for the Guadalupe neighborhood.
+    </p>
+    <div class="project-tags-row">
+      <span class="ptag physical">Physical</span>
+      <span class="ptag research">Research</span>
+    </div>
+  </div>
+
+  <div class="project-meta-sidebar">
+    <div class="meta-block">
+      <p class="meta-label">My Role</p>
+      <p class="meta-value">Solo - Research & Publication Design</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Timeline</p>
+      <p class="meta-value">Fall 2021 — 8 weeks</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Advisors</p>
+      <p class="meta-value">Zoë Greggs, Michelle Millar Fisher, Juliana Barton, Orkan Telhan</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Location</p>
+      <p class="meta-value">San Jose, CA</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Featured In</p>
+      <p class="meta-value">Designing Motherhood Instagram; <br> Design Philadelphia; <br>Open Syllabus</p>
+    </div>
+  </div>
+</header>
+
+<div class="hero-image">
+  <img src="../assets/projects/heart-of-valley/home-heartofvalley.jpeg" alt="Heart of Valley's Delight">
+</div>
+
+<div class="project-content">
+
+  <nav class="content-nav" aria-label="Page sections">
+    <p class="content-nav-title">Contents</p>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#challenge">Challenge</a></li>
+      <li><a href="#outcome">Outcome</a></li>
+      <li><a href="#results">Results</a></li>
+    </ul>
+  </nav>
+
+  <div class="project-body">
+
+    <div class="content-block" id="overview">
+      <span class="block-label">Overview</span>
+      <h2 class="block-h2">How can biological design address food inequality in the heart of Silicon Valley?</h2>
+      <div class="block-body">
+        <p>
+          Before San Jose became the heart of Silicon Valley that we know it to be today, viniculture or the 
+          growth of grapes for winemaking, was popular in the mid-1800s. Throughout the 19th and 20th Century, 
+          San Jose, and the rest of Santa Clara Valley, grew agriculture, packaged and canned goods, and prepared 
+          foods like sauces. These included orchard fruits, berries, tree nuts, and vegetables, in addition to 
+          packaging, canning, and shipping. Because harvesting produce is very labor intensive, labor unions were 
+          on the rise in the 1970s. After World War II, soldiers and veterans took advantage of labor and good 
+          ports, creating some of the first big industries within electronics, high tech, and military-based 
+          aerospace.
+        </p>
+        
+        <p> 
+          Despite the history and abundance of agriculture and food produced, poverty and food insecurity during 
+          pregnancy still exists. There are 2 to 14 times more fresh produce at grocery stores in high income 
+          areas in comparison to low income areas. 25% of the community lives below the federal poverty line. 
+          Additionally, maternal mortality rates in Black or African American communities are almost 6 times 
+          greater than those of White, Asian or Pacific Islander, and Hispanic or Latino communities, while 
+          infant mortality rates are 2-3 times greater. When looking at malnutrition in general, studies have 
+          shown that it causes 45% of child mortality and 20% of maternal mortality.
+        </p>
+        <p>
+          This project looks to biology as a framework for community care — drawing on the
+          placenta's five core functions as a design inspiration for how a community might
+          nourish and sustain itself.
+        </p>
+      </div>
+
+      <div class="media-2col">
+        <div class="media-2col-item">
+          <img src="../assets/projects/heart-of-valley/dm-history.jpg" alt="San Jose agricultural history">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/heart-of-valley/dm-stats.jpg" alt="Food inequality statistics">
+        </div>
+      </div>
+      <p class="media-caption">San Jose's agricultural history and current food inequality statistics.</p>
+    </div>
+
+    <div class="content-block" id="challenge">
+      <span class="block-label">The Challenge</span>
+      <h2 class="block-h2">The placenta as a model for community nourishment.</h2>
+      <div class="block-body">
+        <p>
+          The placenta performs five essential functions that map directly onto community needs:
+          transport oxygen, deliver nutrients, manage waste, provide immunity, and foster growth.
+          Using biological design as a methodological lens, the project proposes a community
+          infrastructure that mirrors these functions — centered on the Guadalupe Community Garden.
+        </p>
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/heart-of-valley/dm-placenta.jpeg" alt="Placenta biological design inspiration">
+      </div>
+      <p class="media-caption">The placenta's five functions as a design framework for community infrastructure.</p>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <div class="step-content">
+            <h4>Transport oxygen</h4>
+            <p>Expanding the Guadalupe Community Garden as a physical green space that improves air quality and access to nature.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <div class="step-content">
+            <h4>Deliver nutrients</h4>
+            <p>A community kitchen providing fresh food preparation resources to residents without adequate home cooking facilities.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">03</span>
+          <div class="step-content">
+            <h4>Manage waste</h4>
+            <p>A community composting program closing the loop between food consumption and soil regeneration.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">04</span>
+          <div class="step-content">
+            <h4>Provide immunity </h4>
+            <p>Advocacy postcards and educational events building long-term community resilience and political voice around food justice.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">05</span>
+          <div class="step-content">
+            <h4>Foster growth & development </h4>
+            <p>Educational events on food sovereignty, maternal and infant health, and the intersection of the two.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-block" id="outcome">
+      <span class="block-label">Outcome</span>
+      <h2 class="block-h2">A community brochure and expanded garden proposal for Guadalupe Community Garden.</h2>
+      <div class="block-body">
+        <p>
+          The project culminated in a brochure communicating the proposal to Guadalupe
+          community members — designed to be accessible, locally resonant, and actionable.
+          The document outlines the five-function framework and its translation into specific
+          programs: garden expansion, community kitchen, composting, advocacy, and education.
+        </p>
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/heart-of-valley/dm-brochure.png" alt="Heart of Valley's Delight brochure">
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/heart-of-valley/dm-brochure2.png" alt="Brochure detail">
+      </div>
+    </div>
+
+    <div class="content-block" id="results">
+      <span class="block-label">Results</span>
+      <h2 class="block-h2">Featured in Designing Motherhood and Design Philadelphia.</h2>
+      <div class="block-body">
+        <p>
+          The project was featured in the Designing Motherhood Instagram, the Design Philadelphia
+          public program, and an open syllabus curriculum — reaching audiences beyond the
+          classroom and situating the work within broader conversations about reproductive
+          justice, food equity, and biological design.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="project-nav">
+  <a href="futureofwaste.html" class="project-nav-item project-nav-prev">
+    <p class="project-nav-label">← Previous</p>
+    <h3 class="project-nav-title">The Future of Waste</h3>
+    <p class="project-nav-desc">Speculative design, 3D modeling</p>
+  </a>
+  <a href="sensing-garden.html" class="project-nav-item project-nav-next">
+    <p class="project-nav-label">Next →</p>
+    <h3 class="project-nav-title">Sensing Garden</h3>
+    <p class="project-nav-desc">AI-enabled biodiversity monitoring hardware</p>
+  </a>
+</div>
+
+<footer>
+  <span class="footer-sig">Designed &amp; developed with &#x2764; + &#x263B; by Sabrina Tian 2026</span>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/sabrinactian/" target="_blank">LinkedIn ↗</a>
+    <a href="https://www.instagram.com/bysabrinatian/" target="_blank">Instagram ↗</a>
+    <a href="mailto:sabrina.c.tian@gmail.com">Email ↗</a>
+  </div>
+</footer>
+
+<script src="../scripts/main.js"></script>
+</body>
+</html>

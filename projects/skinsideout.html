@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+<title>Skinside Out — Sabrina Tian</title>
+<link rel="stylesheet" href="../styles/tokens.css">
+<link rel="stylesheet" href="../styles/base.css">
+<link rel="stylesheet" href="../styles/project.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Sabrina Tian</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Work</a></li>
+    <!-- <li><a href="../play.html">Play</a></li> -->
+    <li><a href="../about.html">About</a></li>
+    <li><a href="mailto:sabrina.c.tian@gmail.com">Contact ↗</a></li>
+  </ul>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"><span class="theme-icon-moon">☽</span><span class="theme-icon-sun">☀</span></button>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html" onclick="toggleMenu()">Work</a>
+  <a href="../about.html" onclick="toggleMenu()">About</a>
+  <a href="mailto:sabrina.c.tian@gmail.com" onclick="toggleMenu()">Contact ↗</a>
+</div>
+
+<header class="project-header">
+  <div>
+    <a href="../index.html" class="back-link">← All work</a>
+    <span class="project-eyebrow">Solo Vision — Material Exploration</span>
+    <h1 class="project-h1"><em>Skinside Out</em><br>Growing Your Own Skincare</h1>
+    <p class="project-intro">
+      A toolkit to empower people to take control of their own skincare by growing sustainable
+      sheet masks suitable for all skin types — not just human ones. Made from bacterial
+      cellulose (SCOBY) cultivated from food waste, Skinside Out draws on ancient soil
+      fallowing techniques to inspire a new relationship between self-care and the environment.
+    </p>
+    <div class="project-tags-row">
+      <span class="ptag physical">Physical</span>
+      <span class="ptag craft">Craft</span>
+    </div>
+  </div>
+
+  <div class="project-meta-sidebar">
+    <div class="meta-block">
+      <p class="meta-label">My Role</p>
+      <p class="meta-value">Solo - Research, Material Experimentation & Design</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Timeline</p>
+      <p class="meta-value">Winter 2023 — 4 weeks</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Advisors</p>
+      <p class="meta-value">Leila Sheldrick, Gareth Loudon, John Stevens, Celine Mougenot, Paula Zuccotti, Jack Mama, Nick Munro</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Location</p>
+      <p class="meta-value">London</p>
+    </div>
+  </div>
+</header>
+
+<div class="hero-image">
+  <img src="../assets/projects/skinsideout/so-01.png" alt="Skinside Out">
+</div>
+
+<div class="project-content">
+
+  <nav class="content-nav" aria-label="Page sections">
+    <p class="content-nav-title">Contents</p>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#challenge">Challenge</a></li>
+      <li><a href="#outcome">Outcome</a></li>
+      <li><a href="#results">Results</a></li>
+    </ul>
+  </nav>
+
+  <div class="project-body">
+
+    <div class="content-block" id="overview">
+      <span class="block-label">Overview</span>
+      <h2 class="block-h2">How can we care for both our skin and our planet's skin at the same time?</h2>
+      <div class="block-body">
+        <p>
+          Skinside Out began with a materials-first approach: assessing bacterial cellulose
+          (SCOBY) for its identity, lifecycle, and system potential before asking what it
+          could become. This combined Seetal Solanki's materials-first methodology with a
+          traditional double diamond design process.
+        </p>
+        <p>
+          SCOBY — the symbiotic culture of bacteria and yeast used to ferment kombucha — produces
+          a flexible, skin-compatible membrane that can be grown in weeks from food waste.
+          Its properties make it a natural candidate for sheet masks: hydrating, biodegradable,
+          and customizable to different skin needs.
+        </p>
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/skinsideout/so-02.png" alt="SCOBY experiments">
+      </div>
+      <div class="media-full">
+        <img src="../assets/projects/skinsideout/so-lifecycle.gif" alt="SCOBY lifecycle">
+      </div>
+      <p class="media-caption">SCOBY lifecycle: from food waste to skin-compatible membrane.</p>
+    </div>
+
+    <div class="content-block" id="challenge">
+      <span class="block-label">The Challenge</span>
+      <h2 class="block-h2">Three weeks of material experiments.</h2>
+      <div class="block-body">
+        <p>
+          Each week focused on a different variable, building understanding of what SCOBY could
+          and couldn't do:
+        </p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <div class="step-content">
+            <h4>Fruit & Vegetable Peels</h4>
+            <p>Testing visual variation through different peel types. Onion skin lacked sufficient sugar content; eggshells caused breakage during drying.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <div class="step-content">
+            <h4>Durability Enhancement</h4>
+            <p>Growing SCOBY with embedded nets and purple cabbage. Successful pattern formation occurred as cabbage dyes bled into the material during growth.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">03</span>
+          <div class="step-content">
+            <h4>Household Additives</h4>
+            <p>Testing red wine, nettle, oat milk, and kefir. Pre-fermented additives increased growth speed and created a glossy, skin-smooth texture.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="media-2col">
+        <div class="media-2col-item">
+          <img src="../assets/projects/skinsideout/so-03.png" alt="Material testing">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/skinsideout/so-04.png" alt="Material testing">
+        </div>
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/skinsideout/so-12.png" alt="Material testing">
+      </div>
+
+      <div class="media-2col">
+        <div class="media-2col-item">
+          <img src="../assets/projects/skinsideout/so-06.png" alt="Material testing">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/skinsideout/so-07.png" alt="Material testing">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/skinsideout/so-08.png" alt="Material testing">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/skinsideout/so-09.png" alt="Material testing">
+        </div>
+      </div>
+    </div>
+
+    <div class="content-block" id="outcome">
+      <span class="block-label">Outcome</span>
+      <h2 class="block-h2">A home toolkit for growing personalized sheet masks.</h2>
+      <div class="block-body">
+        <p>
+          Sheet masks were selected to maximize the use of SCOBY's natural properties —
+          its membrane structure, moisture retention, and skin compatibility. The Skinside Out
+          toolkit provides everything needed to cultivate, harvest, and apply a SCOBY sheet mask
+          at home, drawing on ancient fallowing soil techniques to encourage a cyclical, restorative
+          relationship with materials.
+        </p>
+        <p>
+          The design incorporates pause and patience into the ritual — growing a mask takes weeks,
+          which reframes skincare as a relationship rather than a transaction.
+        </p>
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/skinsideout/so-p01.png" alt="Skinside Out toolkit">
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/skinsideout/so-p02.png" alt="Skinside Out packaging and instructions">
+      </div>
+    </div>
+
+    <div class="content-block" id="results">
+      <span class="block-label">Results</span>
+      <h2 class="block-h2">Inspiring people to understand where their products come from.</h2>
+      <div class="block-body">
+        <p>
+          Skinside Out's goal was to inspire people to understand where their products come from
+          and the labor it takes to create them — drawing similarities between ourselves and the
+          environment to foster a better relationship with both.
+        </p>
+        <p>
+          The project extended earlier material research from <a href="vleur.html">Vleur</a>,
+          where bacterial cellulose fermentation was explored as part of a food waste upcycling
+          device. Skinside Out developed this strand as a standalone body of work focused on
+          biological material design and behavioral change through making.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="project-nav">
+  <a href="kirage.html" class="project-nav-item project-nav-prev">
+    <p class="project-nav-label">← Previous</p>
+    <h3 class="project-nav-title">Kirage</h3>
+    <p class="project-nav-desc">Urban waterway revitalization in Tokyo</p>
+  </a>
+  <a href="language.html" class="project-nav-item project-nav-next">
+    <p class="project-nav-label">Next →</p>
+    <h3 class="project-nav-title">Tactile Language Learning</h3>
+    <p class="project-nav-desc">Arduino + machine learning for language learning</p>
+  </a>
+</div>
+
+<footer>
+  <span class="footer-sig">Designed &amp; developed with &#x2764; + &#x263B; by Sabrina Tian 2026</span>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/sabrinactian/" target="_blank">LinkedIn ↗</a>
+    <a href="https://www.instagram.com/bysabrinatian/" target="_blank">Instagram ↗</a>
+    <a href="mailto:sabrina.c.tian@gmail.com">Email ↗</a>
+  </div>
+</footer>
+
+<script src="../scripts/main.js"></script>
+</body>
+</html>

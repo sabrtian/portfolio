@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+<title>Tactile Language Learning — Sabrina Tian</title>
+<link rel="stylesheet" href="../styles/tokens.css">
+<link rel="stylesheet" href="../styles/base.css">
+<link rel="stylesheet" href="../styles/project.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Sabrina Tian</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Work</a></li>
+    <!-- <li><a href="../play.html">Play</a></li> -->
+    <li><a href="../about.html">About</a></li>
+    <li><a href="mailto:sabrina.c.tian@gmail.com">Contact ↗</a></li>
+  </ul>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"><span class="theme-icon-moon">☽</span><span class="theme-icon-sun">☀</span></button>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html" onclick="toggleMenu()">Work</a>
+  <a href="../about.html" onclick="toggleMenu()">About</a>
+  <a href="mailto:sabrina.c.tian@gmail.com" onclick="toggleMenu()">Contact ↗</a>
+</div>
+
+<header class="project-header">
+  <div>
+    <a href="../index.html" class="back-link">← All work</a>
+    <span class="project-eyebrow">Imperial College London</span>
+    <h1 class="project-h1"><em>Tactile Language Learning</em></h1>
+    <p class="project-intro">
+      Every Chinese character consists of two components: pronunciation and meaning. This project
+      creates an educational tool for Mandarin Chinese that breaks learning into phoneme, intonation,
+      and writing components — using physical blocks controlled by voice, where correct pronunciation
+      triggers blocks to move and form characters, simultaneously demonstrating stroke order.
+    </p>
+    <div class="project-tags-row">
+      <span class="ptag physical">Physical</span>
+      <span class="ptag software">Software</span>
+    </div>
+  </div>
+
+  <div class="project-meta-sidebar">
+    <div class="meta-block">
+      <p class="meta-label">My Role</p>
+      <p class="meta-value">Design & Fabrication</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Timeline</p>
+      <p class="meta-value">Fall 2022 — 5 weeks</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Team</p>
+      <p class="meta-value">Hanju Seo, Xinyi Zhou, Dr. Rebecca Stewart, Charlotte Slingsby</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Location</p>
+      <p class="meta-value">London</p>
+    </div>
+  </div>
+</header>
+
+<div class="hero-image">
+  <img src="../assets/projects/tactile-language/home-language.png" alt="Tactile Language Learning">
+</div>
+
+<div class="project-content">
+
+  <nav class="content-nav" aria-label="Page sections">
+    <p class="content-nav-title">Contents</p>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#challenge">Challenge</a></li>
+      <li><a href="#outcome">Outcome</a></li>
+      <li><a href="#results">Results</a></li>
+    </ul>
+  </nav>
+
+  <div class="project-body">
+
+    <div class="content-block" id="overview">
+      <span class="block-label">Overview</span>
+      <h2 class="block-h2">How can we make language learning more tactile for students to enhance pronunciation and writing skills?</h2>
+      <div class="block-body">
+        <p>
+          Mandarin Chinese presents a unique learning challenge: characters encode
+          both meaning and pronunciation, and handwriting stroke order shapes fluency. Most
+          digital learning tools address these separately — or not at all.
+        </p>
+        <p>
+          This project creates a physical system where spoken Mandarin directly controls physical
+          blocks that form characters. Speaking a character correctly moves the blocks; the
+          blocks' movement traces the correct stroke order. Pronunciation and writing are learned
+          simultaneously, through interaction.
+        </p>
+      </div>
+
+      <div class="media-2col">
+        <div class="media-2col-item">
+          <img src="../assets/projects/tactile-language/language-final01.png" alt="Physical output for 一 (yī, '1')">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/tactile-language/language-final02.png" alt="Physical output for 二 (èr, '2')">
+        </div>
+      </div>
+    </div>
+
+    <div class="content-block" id="challenge">
+      <span class="block-label">The Challenge</span>
+      <h2 class="block-h2">Connecting voice input to physical output through machine learning.</h2>
+      <div class="block-body">
+        <p>
+          The system scope was limited to five Mandarin characters:
+          一 (yī, "1"), 二 (èr, "2"), 三 (sān, "3"), 口 (kǒu, "mouth"), and 日 (rì, "sun").
+          Building even this narrow vocabulary required integrating audio capture, machine
+          learning classification, and motor control.
+        </p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <div class="step-content">
+            <h4>Audio Input & Machine Learning</h4>
+            <p>Audio captured through microphone is sent to Wekinator — an open-source machine learning tool — which classifies five voice gestures at 1,600 inputs via port 6448.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <div class="step-content">
+            <h4>Motor Output</h4>
+            <p>Processing receives the Wekinator classification and controls motors that move physical blocks, forming three-dimensional character visualizations.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="media-2col">
+        <div class="media-2col-item">
+          <img src="../assets/projects/tactile-language/language-wekinator.png" alt="Wekinator machine learning interface">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/tactile-language/language-circuit.png" alt="Circuit and motor control">
+        </div>
+      </div>
+      <p class="media-caption">Wekinator ML interface and motor circuit.</p>
+
+      <div class="media-full">
+        <img src="../assets/projects/tactile-language/language-process.png" alt="System process flow">
+      </div>
+      <p class="media-caption">System process: audio input → ML classification → motor output → character formation.</p>
+    </div>
+
+    <div class="content-block" id="outcome">
+      <span class="block-label">Outcome</span>
+      <h2 class="block-h2">Physical blocks that respond to voice — forming characters in real time.</h2>
+      <div class="block-body">
+        <p>
+          The completed prototype demonstrates the full loop: a student speaks a Mandarin character
+          into the microphone; Wekinator classifies the pronunciation; the correct motor sequence
+          fires; the blocks move to form the character in the correct stroke order.
+        </p>
+        <p>
+          The tactile feedback loop reinforces both pronunciation accuracy and character formation
+          in a way that screen-based tools cannot replicate.
+        </p>
+      </div>
+
+      <div class="media-2col">
+        <div class="media-2col-item">
+          <img src="../assets/projects/tactile-language/language-o1.png" alt="Motor view">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/tactile-language/language-o2.png" alt="Motor view">
+        </div>
+      </div>
+      <div class="media-full">
+        <img src="../assets/projects/tactile-language/language-final-kou.png" alt="Tactile Language Learning — 口 character">
+      </div>
+      <p class="media-caption">The character 口 (kǒu, "mouth") formed by the physical block system.</p>
+    </div>
+
+    <div class="content-block" id="results">
+      <span class="block-label">Results</span>
+      <h2 class="block-h2">A cyber-physical model for embodied language learning.</h2>
+      <div class="block-body">
+        <p>
+          The project demonstrated that machine learning classification can be integrated into
+          a physical educational tool within a 5-week prototype cycle. By linking voice input
+          directly to motor-driven physical output, the system creates a new modality for
+          language learning — one that makes the invisible (pronunciation accuracy) visible
+          and the abstract (stroke order) physical.
+        </p>
+
+        <!-- <div class="iframe-container"> -->
+          <iframe width="840" height="472.5" src="https://www.youtube.com/embed/xPZsWItjvds?si=fb3nu2lyhEGy4_HT" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+          encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen></iframe>
+        <!-- </div> -->
+        <p>
+          Video and cover photography by Marco Da Re and Kevin Lee.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="project-nav">
+  <a href="skinsideout.html" class="project-nav-item project-nav-prev">
+    <p class="project-nav-label">← Previous</p>
+    <h3 class="project-nav-title">Skinside Out</h3>
+    <p class="project-nav-desc">Biological material design with SCOBY</p>
+  </a>
+  <a href="poolepavilion.html" class="project-nav-item project-nav-next">
+    <p class="project-nav-label">Next →</p>
+    <h3 class="project-nav-title">Poole Pavilion</h3>
+    <p class="project-nav-desc">Grand Challenge top 12 shortlist</p>
+  </a>
+</div>
+
+<footer>
+  <span class="footer-sig">Designed &amp; developed with &#x2764; + &#x263B; by Sabrina Tian 2026</span>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/sabrinactian/" target="_blank">LinkedIn ↗</a>
+    <a href="https://www.instagram.com/bysabrinatian/" target="_blank">Instagram ↗</a>
+    <a href="mailto:sabrina.c.tian@gmail.com">Email ↗</a>
+  </div>
+</footer>
+
+<script src="../scripts/main.js"></script>
+</body>
+</html>

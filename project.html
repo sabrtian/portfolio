@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+<!-- ✏️ EDIT: Update project title -->
+<title>[Project Title] — Sabrina Tian</title>
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/project.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Sabrina Tian</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Work</a></li>
+    <!-- <li><a href="play.html">Play</a></li> -->
+    <li><a href="about.html">About</a></li>
+    <li><a href="mailto:sabrina.c.tian@gmail.com">Contact ↗</a></li>
+  </ul>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"><span class="theme-icon-moon">☽</span><span class="theme-icon-sun">☀</span></button>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="toggleMenu()">Work</a>
+  <a href="play.html" onclick="toggleMenu()">Play</a>
+  <a href="about.html" onclick="toggleMenu()">About</a>
+  <a href="mailto:sabrina.c.tian@gmail.com" onclick="toggleMenu()">Contact ↗</a>
+</div>
+
+<!-- ════════════════════════════════════════
+     PROJECT HEADER
+     ════════════════════════════════════════ -->
+<header class="project-header">
+  <div>
+    <a href="index.html" class="back-link">← All work</a>
+    <!-- ✏️ EDIT: client / category -->
+    <span class="project-eyebrow">MASSACHUSETTS INSTITUTE OF TECHNOLOGY</span>
+    <!-- ✏️ EDIT: title -->
+    <h1 class="project-h1"><em>Sensing Garden</em><br>Biodiversity Monitoring at Scale</h1>
+    <!-- ✏️ EDIT: one sentence summary -->
+    <p class="project-intro">
+      An AI-enabled hardware sensing system for biodiversity monitoring, deployed across 4 global 
+      cities — designed to survive the physical world.
+    </p>
+    <!-- ✏️ EDIT: tags. Classes: hardware / software / research -->
+    <div class="project-tags-row">
+      <span class="ptag physical">Hardware Enclosure Design</span>
+      <span class="ptag software">AI / ML</span>
+      <span class="ptag software">Computer Vision</span>
+      <span class="ptag software">Edge Computing</span>
+    </div>
+  </div>
+
+  <!-- ✏️ EDIT: project meta -->
+  <div class="project-meta-sidebar">
+    <div class="meta-block">
+      <p class="meta-label">My Role</p>
+      <p class="meta-value">Design Lead</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Timeline</p>
+      <p class="meta-value">Oct 2024 – Oct 2025</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Team</p>
+      <p class="meta-value">Ferrari Huang, Deniz Aydemir, Romme te Velde, Simone Erba, Ase Haatveit, Titus Venverloo — Fabio Duarte (PI)</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Location</p>
+      <p class="meta-value"><!-- ✏️ EDIT --></p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Featured In</p>
+      <p class="meta-value"><!-- ✏️ EDIT --></p>
+    </div>
+  </div>
+</header>
+
+<!-- ════════════════ OUTCOMES BAR ════════════════ -->
+<!-- ✏️ EDIT: 3 key metrics. Remove whole section if none. -->
+<!-- <div class="outcomes-bar">
+  <div class="outcome-stat">
+    <p class="outcome-num">4</p>
+    <p class="outcome-label">Global cities deployed</p>
+  </div>
+  <div class="outcome-stat">
+    <p class="outcome-num">35%</p>
+    <p class="outcome-label">Faster prototyping via enclosure optimization</p>
+  </div>
+  <div class="outcome-stat">
+    <p class="outcome-num">10k+</p>
+    <p class="outcome-label">People reached at global events</p>
+  </div>
+</div> -->
+
+<!-- ════════════════ HERO IMAGE ════════════════ -->
+<!-- ✏️ EDIT: Replace src with your hero image -->
+<div class="hero-image">
+  <img src="assets/home-sg.jpg" alt="Sensing Garden"
+    onerror="this.style.display='none';this.parentNode.innerHTML='<div class=\'hero-image-placeholder\'>[ hero image — full width ]</div>'">
+</div>
+
+<!-- ════════════════ CONTENT ════════════════ -->
+<div class="project-content">
+
+  <!-- ✏️ EDIT: Update section names to match your content blocks below -->
+  <nav class="content-nav" aria-label="Page sections">
+    <p class="content-nav-title">Contents</p>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#challenge">Challenge</a></li>
+      <li><a href="#outcome">Outcome</a></li>
+      <li><a href="#results">Results</a></li>
+    </ul>
+  </nav>
+
+  <div class="project-body">
+
+    <!-- ══ BLOCK: OVERVIEW ══ -->
+    <div class="content-block" id="overview">
+      <span class="block-label">Overview</span>
+      <h2 class="block-h2">What we made, and why it matters.</h2>
+      <div class="block-body">
+        <!-- ✏️ EDIT -->
+        <p>
+          Sensing Garden is an AI-enabled hardware product designed to passively monitor urban biodiversity — 
+          detecting insects, birds, and ambient conditions in real time. It needed to work outdoors, 
+          in all climates, without requiring expert installation.
+        </p>
+        <p>
+          My role spanned the full design arc: from the physical enclosure (balancing airflow mechanics 
+          with environmental durability) to the data visualization layer that made sensor readings legible 
+          to researchers and city planners.
+        </p>
+      </div>
+
+      <!-- MEDIA: FULL BLEED IMAGE -->
+      <!-- ✏️ EDIT src or remove block -->
+      <div class="media-full">
+        <img src="assets/sg-overview.jpg" alt="Sensing Garden overview"
+          onerror="this.style.display='none';this.parentNode.innerHTML='<div class=\'media-full-placeholder\'>[ overview image ]</div>'">
+      </div>
+      <p class="media-caption">Caption: Early prototype of the sensing enclosure, tested in Amsterdam, 2024.</p>
+    </div>
+
+    <!-- ══ BLOCK: CHALLENGE ══ -->
+    <div class="content-block" id="challenge">
+      <span class="block-label">The Challenge</span>
+      <h2 class="block-h2">Designing for the physical and digital simultaneously.</h2>
+      <div class="block-body">
+        <p>Most sensing devices optimize for either function (utilitarian, ugly) or aesthetics (designed for humans, not environments). We needed both.</p>
+      </div>
+
+      <!-- PROCESS STEPS -->
+      <div class="process-steps">
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <div class="step-content">
+            <h4>Survive the field</h4>
+            <p>Weatherproofed across humidity, rain, and temperature variance in 4 climate zones.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <div class="step-content">
+            <h4>Allow passive airflow for acoustic sensing</h4>
+            <p>Enclosure geometry had to permit sound entry for insect/bird detection without water ingress.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">03</span>
+          <div class="step-content">
+            <h4>Enable non-expert installation</h4>
+            <p>Research partners at 3 global workshops needed to deploy the sensor independently.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">04</span>
+          <div class="step-content">
+            <h4>Render data legibly at scale</h4>
+            <p>GIS-based visualizations had to work for expert researchers and 10k-person public events.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MEDIA: 2-COL IMAGES -->
+      <div class="media-2col">
+        <div class="media-2col-item">
+          <img src="assets/sg-challenge-1.jpg" alt=""
+            onerror="this.style.display='none';this.parentNode.innerHTML='<div class=\'media-2col-placeholder\'>[ image 1 ]</div>'">
+        </div>
+        <div class="media-2col-item">
+          <img src="assets/sg-challenge-2.jpg" alt=""
+            onerror="this.style.display='none';this.parentNode.innerHTML='<div class=\'media-2col-placeholder\'>[ image 2 ]</div>'">
+        </div>
+      </div>
+      <p class="media-caption">Left: airflow geometry studies. Right: weatherproofing stress tests.</p>
+    </div>
+
+    <!-- ══ BLOCK: OUTCOME ══ -->
+    <div class="content-block" id="outcome">
+      <span class="block-label">Outcomes &amp; Impact</span>
+      <h2 class="block-h2">What shipped, and what it did.</h2>
+      <div class="block-body">
+        <p>Two product generations deployed across Amsterdam, London, and two partner cities. GIS visualization system shown at a global biodiversity event with 10k+ attendees.</p>
+      </div>
+
+      <!-- INSIGHTS GRID -->
+      <div class="insights-grid">
+        <div class="insight-card">
+          <p class="insight-num">01</p>
+          <p class="insight-text">35% faster prototyping enabled self-serve deployment by 3 global research teams.</p>
+        </div>
+        <div class="insight-card">
+          <p class="insight-num">02</p>
+          <p class="insight-text">GIS visualizations adapted for both expert review and 10k-person public exhibition — zero redesign between contexts.</p>
+        </div>
+        <div class="insight-card">
+          <p class="insight-num">03</p>
+          <p class="insight-text">Workshop documentation designed for non-engineers eliminated direct support dependency.</p>
+        </div>
+        <div class="insight-card">
+          <p class="insight-num">04</p>
+          <p class="insight-text">Physical-digital touchpoint mapping across 2 product generations improved handoff between hardware and software teams.</p>
+        </div>
+      </div>
+
+      <div class="media-full">
+        <img src="assets/sg-deployment.jpg" alt="Deployed sensor"
+          onerror="this.style.display='none';this.parentNode.innerHTML='<div class=\'media-full-placeholder\'>[ deployment — sensor in field ]</div>'">
+      </div>
+      <p class="media-caption">Sensing Garden v6 installed in Amsterdam, Oct 2024.</p>
+    </div>
+
+    <!-- ══ BLOCK: RESULTS ══ -->
+    <div class="content-block" id="results">
+      <span class="block-label">Results</span>
+      <h2 class="block-h2"><!-- ✏️ EDIT --></h2>
+      <div class="block-body">
+        <!-- ✏️ EDIT -->
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ════════════════ PROJECT NAV ════════════════ -->
+<div class="project-nav">
+  <!-- ✏️ EDIT: previous project -->
+  <a href="project.html" class="project-nav-item project-nav-prev">
+    <p class="project-nav-label">← Previous</p>
+    <h3 class="project-nav-title"><!-- ✏️ EDIT --></h3>
+    <p class="project-nav-desc"><!-- ✏️ EDIT --></p>
+  </a>
+  <!-- ✏️ EDIT: next project -->
+  <a href="project.html" class="project-nav-item project-nav-next">
+    <p class="project-nav-label">Next →</p>
+    <h3 class="project-nav-title"><!-- ✏️ EDIT --></h3>
+    <p class="project-nav-desc"><!-- ✏️ EDIT --></p>
+  </a>
+</div>
+
+<footer>
+  <span class="footer-sig">Designed &amp; developed by Sabrina Tian — 2025</span>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/sabrinactian/" target="_blank">LinkedIn ↗</a>
+    <a href="https://www.instagram.com/bysabrinatian/" target="_blank">Instagram ↗</a>
+    <a href="mailto:sabrina.c.tian@gmail.com">Email ↗</a>
+  </div>
+</footer>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>

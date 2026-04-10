@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+<title>PlastiCraft — Sabrina Tian</title>
+<link rel="stylesheet" href="../styles/tokens.css">
+<link rel="stylesheet" href="../styles/base.css">
+<link rel="stylesheet" href="../styles/project.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Sabrina Tian</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Work</a></li>
+    <!-- <li><a href="../play.html">Play</a></li> -->
+    <li><a href="../about.html">About</a></li>
+    <li><a href="mailto:sabrina.c.tian@gmail.com">Contact ↗</a></li>
+  </ul>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"><span class="theme-icon-moon">☽</span><span class="theme-icon-sun">☀</span></button>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html" onclick="toggleMenu()">Work</a>
+  <a href="../about.html" onclick="toggleMenu()">About</a>
+  <a href="mailto:sabrina.c.tian@gmail.com" onclick="toggleMenu()">Contact ↗</a>
+</div>
+
+<header class="project-header">
+  <div>
+    <a href="../index.html" class="back-link">← All work</a>
+    <span class="project-eyebrow">Keio University - Future Craft Material Interaction Research Group</span>
+    <h1 class="project-h1"><em>PlastiCraft</em><br>Perception of Waste in Japan</h1>
+    <p class="project-intro">
+      "Mottainai" is a Japanese cultural concept emphasizing the shame of something going to waste
+      without having made use of its full potential. This project explores how to encourage
+      individual-level upcycling of household plastic waste given Japan's high disposal costs
+      and the gap between public perception and the reality of recycling.
+    </p>
+    <div class="project-tags-row">
+      <span class="ptag research">Research</span>
+    </div>
+  </div>
+
+  <div class="project-meta-sidebar">
+    <div class="meta-block">
+      <p class="meta-label">My Role</p>
+      <p class="meta-value">Cultural Research & Soft Robotics Prototyping</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Timeline</p>
+      <p class="meta-value">Summer 2023 — 3 months</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Advisors</p>
+      <p class="meta-value">Sebastian Deterding, Paula Zuccotti, Junichi Yamaoka</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Location</p>
+      <p class="meta-value">Tokyo</p>
+    </div>
+  </div>
+</header>
+
+<div class="hero-image">
+  <img src="../assets/projects/plasticraft/home-plasticraft.gif" alt="PlastiCraft">
+</div>
+
+<div class="project-content">
+
+  <nav class="content-nav" aria-label="Page sections">
+    <p class="content-nav-title">Contents</p>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#challenge">Challenge</a></li>
+      <li><a href="#outcome">Outcome</a></li>
+      <li><a href="#results">Results</a></li>
+    </ul>
+  </nav>
+
+  <div class="project-body">
+
+    <div class="content-block" id="overview">
+      <span class="block-label">Overview</span>
+      <h2 class="block-h2">How might we encourage individual-level upcycling of household plastic waste?</h2>
+      <div class="block-body">
+        <p>
+          Japan maintains some of the world's highest plastic consumption and recycling rates — yet
+          a significant gap exists between public perception and reality. Despite careful sorting,
+          63% of Japan's plastic waste undergoes thermal recycling (burning for fuel or energy),
+          and 46% of total plastic waste is exported to Southeast Asian nations increasingly
+          restricting foreign waste imports.
+        </p>
+        <p>
+          Rooted in the concept of <em>mottainai</em> — a Japanese expression of regret at waste —
+          this project examined how cultural values, behavioral patterns, and design interventions
+          can shift how individuals engage with plastic waste at home.
+        </p>
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/plasticraft/pw-art.png" alt="Traditional depictions of upcycling in Japanese craftmaking">
+      </div>
+      <p class="media-caption">Historical Japanese depictions of upcycling in craftmaking traditions.</p>
+    </div>
+
+    <div class="content-block" id="challenge">
+      <span class="block-label">The Challenge</span>
+      <h2 class="block-h2">Recycling in Japan isn't what people think it is.</h2>
+      <div class="block-body">
+        <p>
+          My research began with a visit to Itabashi Incineration Plant — one of Tokyo's 23
+          incineration facilities — where I discovered that regardless of how carefully individuals
+          sort their waste, it ultimately ends up incinerated or in landfill.
+        </p>
+        <p>
+          I then conducted interviews with 18–42 year-old Japan residents — frequent convenience
+          and grocery store consumers — many of whom had not visited an incineration plant in
+          over a decade. Their waste types and behavioral patterns revealed a consistent
+          disconnect between effort and impact.
+        </p>
+      </div>
+
+      <div class="media-2col">
+        <div class="media-2col-item">
+          <img src="../assets/projects/vleur/vleur-r1.png" alt="Field visit to Itabashi Incineration Plant">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/vleur/vleur-r2.png" alt="Research documentation">
+        </div>
+      </div>
+      <p class="media-caption">Field visit to Itabashi Incineration Plant, Tokyo.</p>
+
+      <!-- <div class="media-full">
+          <img src="../assets/projects/plasticraft/pw-r1.png" alt="Plastic waste research">
+      </div>
+      <div class="media-full">
+          <img src="../assets/projects/plasticraft/pw-r2.png" alt="Waste type documentation">
+      </div> -->
+
+      <div class="media-2col">
+        <div class="media-2col-item">
+          <img src="../assets/projects/plasticraft/pw-r3.png" alt="Research findings">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/plasticraft/pw-r4.png" alt="Behavioral patterns">
+        </div>
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/plasticraft/pw-pics.png" alt="PlastiCraft construction kit">
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <div class="step-content">
+            <h4>Consumers lack motivation beyond recycling instructions</h4>
+            <p>Most residents are unaware that "recycled" plastic is largely burned rather than reprocessed.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <div class="step-content">
+            <h4>Price is the primary decision factor</h4>
+            <p>Sustainable alternatives must compete economically to gain adoption.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">03</span>
+          <div class="step-content">
+            <h4>Social norms strongly influence behavior</h4>
+            <p>Interventions should leverage existing cultural values — like <em>mottainai</em> — rather than override them.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">04</span>
+          <div class="step-content">
+            <h4>Consumers desire autonomy</h4>
+            <p>People want tangible, visible evidence of their own impact — not abstract systemic change.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-block" id="outcome">
+      <span class="block-label">Outcome</span>
+      <h2 class="block-h2">An inflatable construction kit for upcycling household plastic waste.</h2>
+      <div class="block-body">
+        <p>
+          The design intervention takes the form of an inflatable construction kit — reimagining
+          constructivist toys and exploring novel fabrication methods using common household plastics.
+          The kit invites users to transform plastic packaging into inflatable building components,
+          making the process of upcycling tangible, playful, and personally rewarding.
+        </p>
+      </div>
+
+      <div class="media-2col">
+        <div class="media-2col-item">
+          <img src="../assets/projects/plasticraft/pw-1.gif" alt="PlastiCraft process">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/plasticraft/pw-2.gif" alt="PlastiCraft animation">
+        </div>
+      </div>
+
+      <div class="media-2col">
+        <div class="media-2col-item">
+          <img src="../assets/projects/plasticraft/pw-3.gif" alt="PlastiCraft construction">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/plasticraft/pw-4.gif" alt="PlastiCraft result">
+        </div>
+      </div>
+      <div class="media-full">
+        <img src="../assets/projects/plasticraft/home-plasticraft.gif" alt="PlastiCraft">
+      </div>
+    </div>
+
+    <div class="content-block" id="results">
+      <span class="block-label">Results</span>
+      <h2 class="block-h2">Designing for behavior change through cultural resonance.</h2>
+      <div class="block-body">
+        <p>
+          The material research component of this project — exploring plastic fabrication methods —
+          informed later work in the <a href="akerue.html">Upcycling Workshop @ AkeruE</a>.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="project-nav">
+  <a href="ubiroot.html" class="project-nav-item project-nav-prev">
+    <p class="project-nav-label">← Previous</p>
+    <h3 class="project-nav-title">Ubiroot</h3>
+    <p class="project-nav-desc">Circular supply chain systems</p>
+  </a>
+  <a href="superbloom.html" class="project-nav-item project-nav-next">
+    <p class="project-nav-label">Next →</p>
+    <h3 class="project-nav-title">Superbloom</h3>
+    <p class="project-nav-desc">GID return exhibition visual identity</p>
+  </a>
+</div>
+
+<footer>
+  <span class="footer-sig">Designed &amp; developed with &#x2764; + &#x263B; by Sabrina Tian 2026</span>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/sabrinactian/" target="_blank">LinkedIn ↗</a>
+    <a href="https://www.instagram.com/bysabrinatian/" target="_blank">Instagram ↗</a>
+    <a href="mailto:sabrina.c.tian@gmail.com">Email ↗</a>
+  </div>
+</footer>
+
+<script src="../scripts/main.js"></script>
+</body>
+</html>

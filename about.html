@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+<title>About — Sabrina Tian</title>
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/about.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Sabrina Tian</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Work</a></li>
+    <!-- <li><a href="play.html">Play</a></li> -->
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="mailto:sabrina.c.tian@gmail.com">Contact ↗</a></li>
+  </ul>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"><span class="theme-icon-moon">☽</span><span class="theme-icon-sun">☀</span></button>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="toggleMenu()">Work</a>
+  <a href="play.html" onclick="toggleMenu()">Play</a>
+  <a href="about.html" onclick="toggleMenu()">About</a>
+  <a href="mailto:sabrina.c.tian@gmail.com" onclick="toggleMenu()">Contact ↗</a>
+</div>
+
+<section class="about-hero">
+  <div class="about-hero-left">
+    <span class="page-tag">About</span>
+    <h1 class="about-name">Sabrina Tian</h1>
+    <p class="about-tagline">Chinese-American designer and researcher interested in designing for culture, whether it be in collaboration with
+      microorganisms, the social behavior and norms found in human societies, or the
+      system of interactions between a society with the environment.</p>
+  </div>
+  <div class="about-hero-right">
+    <div class="photo-frame">
+      <img src="assets/sct-about.jpg" alt="Sabrina Tian">
+    </div>
+  </div>
+</section>
+
+<div class="about-body">
+  <aside class="about-sidebar">
+    <ul class="sidebar-nav">
+      <li><a href="#story">Story</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#exhibitions">Exhibitions</a></li>
+      <li><a href="#honors">Honors</a></li>
+      <li><a href="#clients">Clients</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+    <div class="sidebar-contact">
+      <p class="sidebar-contact-intro">Looking to collaborate or just want to say hi?</p>
+      <a href="https://www.linkedin.com/in/sabrinactian/" target="_blank">LinkedIn ↗</a>
+      <a href="https://www.instagram.com/bysabrinatian/" target="_blank">Instagram ↗</a>
+      <a href="mailto:sabrina.c.tian@gmail.com">Email ↗</a>
+      <!-- <a href="assets/sabrina-tian-resume.pdf" target="_blank">Resume ↗</a> -->
+    </div>
+  </aside>
+
+  <main class="about-main">
+
+    <section class="content-section" id="story">
+      <span class="section-label">Story</span>
+      <!-- <h2>Thinking across matter and medium.</h2> -->
+      <p>
+      Sabrina is a multidisciplinary designer & researcher that blends systems thinking, 
+      visual storytelling, and cross-cultural user research to craft hardware interfaces 
+      and AI-powered digital experiences. Her work has been featured internationally in 
+      London, Dubai, New York City, and more, most notably at COP28. </p>
+      
+      <br>
+
+      <p>
+      To her, design is a form of advocacy. Everything we create and use shape our 
+      behaviors and surrounding environments. As designers, we must advocate for all 
+      species in creating responsible, accessible, and impactful ways to engage with 
+      both analog and digital spaces around us. She is fascinated in analyzing the 
+      standards of our society, finding ways to refine them to be more inclusive, and 
+      designing for them sustainably.
+      </p>
+    </section>
+
+    <section class="content-section" id="experience">
+      <span class="section-label">Experience</span>
+      <!-- <h2>Where I've worked.</h2> -->
+      <div class="exp-list">
+        <div class="exp-item">
+          <div>
+            <p class="exp-org">Jacobs Engineering Group — SF Bay Area, CA</p>
+            <p class="exp-role">UX Designer, Data Dashboards &amp; Urban Infrastructure</p>
+            <!-- <p class="exp-desc">Dashboards for operational data; design system from scratch (30% less duplication); 
+            user research with engineers &amp; analysts (75% data confidence improvement); 8 personas across 6 facilities.</p> -->
+          </div>
+          <span class="exp-date">Oct 2024–Present</span>
+        </div>
+        <div class="exp-item">
+          <div>
+            <p class="exp-org">Massachusetts Institute of Technology — Cambridge, MA</p>
+            <p class="exp-role">Design Lead, Hardware Design &amp; Data Visualization</p>
+            <!-- <p class="exp-desc">End-to-end design of AI biodiversity sensing hardware deployed in 4 global cities. 
+            GIS visualizations, workshop documentation for 3 global research teams, 10k+ event reach.</p> -->
+          </div>
+          <span class="exp-date">Oct 2024–Oct 2025</span>
+        </div>
+        <div class="exp-item">
+          <div>
+            <p class="exp-org">Snap Inc. — London, UK</p>
+            <p class="exp-role">XR Experience Designer, Generative AI &amp; AR</p>
+            <!-- <p class="exp-desc">AR experience critiquing AI bias using ChatGPT, Stable Diffusion, TTS. 
+            Full UX/UI from wireframe through user testing on mobile.</p> -->
+          </div>
+          <span class="exp-date">Jan 2023–Dec 2023</span>
+        </div>
+        <div class="exp-item">
+          <div>
+            <p class="exp-org">Keio University — Tokyo, Japan</p>
+            <p class="exp-role">Design Researcher, Cross-Cultural Research &amp; Product Strategy</p>
+            <!-- <p class="exp-desc">Led design of household upcycling device; pitched at COP28, NYC, Shanghai; 
+            facilitated workshops with 35+ children at Panasonic Creative Museum.</p> -->
+          </div>
+          <span class="exp-date">Apr 2023–Dec 2023</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="education">
+      <span class="section-label">Education</span>
+      <!-- <h2>Where I studied.</h2> -->
+      <div class="edu-list">
+        <div class="edu-item">
+          <div>
+            <p class="edu-school">Imperial College London × Royal College of Art</p>
+            <p class="edu-degree">MSc/MA Global Innovation Design</p>
+            <p class="edu-note">Royal Commission for 1851 Industrial Design Studentship &middot; Japan Student Scholarship (JASSO)</p>
+          </div>
+          <span class="edu-location">London, UK</span>
+        </div>
+        <div class="edu-item">
+          <div>
+            <p class="edu-school">University of Pennsylvania</p>
+            <p class="edu-degree">BA Design + BA Computational Cognitive Science</p>
+            <p class="edu-note">Dean's List 2021–2022</p>
+          </div>
+          <span class="edu-location">Philadelphia, PA</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="exhibitions">
+      <span class="section-label">Exhibitions &amp; Talks</span>
+      <div class="exhibit-list">
+        <div class="exhibit-item">
+          <p class="exhibit-work">Ubiroot</p>
+          <div class="exhibit-shows">
+            <div class="exhibit-show">
+              <p class="exhibit-venue">Asia Design Week 2024 x Hebei International Industrial Design Week</p>
+              <span class="exhibit-date">Xiongan, Sep 2024</span>
+            </div>
+            <div class="exhibit-show">
+              <p class="exhibit-venue">2024 Summer Show - Imperial College London</p>
+              <span class="exhibit-date">London, July 2024</span>
+            </div><div class="exhibit-show">
+              <p class="exhibit-venue">1851 Science & Alumni Night - The Royal Commission for the Exhibition of 1851</p>
+              <span class="exhibit-date">London, April 2024</span>
+            </div>
+          </div>
+        </div>
+        <div class="exhibit-item">
+          <p class="exhibit-work">Vleur</p>
+          <div class="exhibit-shows">
+            <div class="exhibit-show">
+              <p class="exhibit-venue">COP28 Showcase, Prototypes for Humanity — Dubai Future Foundation</p>
+              <span class="exhibit-date">Dubai, Dec 2023</span>
+            </div>
+            <div class="exhibit-show">
+              <p class="exhibit-venue">Modern Metamorphoses, Biodesign Challenge — Parsons School of Design</p>
+              <span class="exhibit-date">New York City, Jun 2023</span>
+            </div>
+          </div>
+        </div>
+        <div class="exhibit-item">
+          <p class="exhibit-work">Oscillating Cultures</p>
+          <div class="exhibit-shows">
+            <div class="exhibit-show">
+              <p class="exhibit-venue">The Arrival of a Train, SnapAR x Royal College of Art</p>
+              <span class="exhibit-date">London, Sep 2023</span>
+            </div>
+          </div>
+        </div>
+        <div class="exhibit-item">
+          <p class="exhibit-work">Poole Pavilion</p>
+          <div class="exhibit-shows">
+            <div class="exhibit-show">
+              <p class="exhibit-venue">Grand Challenge: Engaging Communities for Generating Marine Sustainable Economies — Royal College of Art</p>
+              <span class="exhibit-date">London, Mar 2023</span>
+            </div>
+          </div>
+        </div>
+        <div class="exhibit-item">
+          <p class="exhibit-work">Born in China, Grown in America</p>
+          <div class="exhibit-shows">
+            <div class="exhibit-show">
+              <p class="exhibit-venue">In Search Of — Charles Addams Fine Arts Hall, University of Pennsylvania</p>
+              <span class="exhibit-date">Philadelphia, Apr 2022</span>
+            </div>
+          </div>
+        </div>
+        <div class="exhibit-item">
+          <p class="exhibit-work">Asian Migration: Emotions &amp; Personal Narratives through Art</p>
+          <div class="exhibit-shows">
+            <div class="exhibit-show">
+              <p class="exhibit-venue">Asian American Studies Fellows Colloquium — University of Pennsylvania</p>
+              <span class="exhibit-date">Philadelphia, Oct 2021</span>
+            </div>
+          </div>
+        </div>
+        <div class="exhibit-item">
+          <p class="exhibit-work">Heart of Valley's Delight</p>
+          <div class="exhibit-shows">
+            <div class="exhibit-show">
+              <p class="exhibit-venue">Designing Motherhood Public Program - Design Philadelphia</p>
+              <span class="exhibit-date">Philadelphia, Oct 2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="honors">
+      <span class="section-label">Honors &amp; Awards</span>
+      <div class="honor-list">
+        <div class="honor-item">
+          <p class="honor-title">Honorable Mention - Design Intelligence Awards</p>
+          <span class="honor-date">Shanghai, Dec 2024</span>
+        </div>
+      </div>
+      <div class="honor-list">
+        <div class="honor-item">
+          <p class="honor-title">Finalist - Paris Design Awards (Product & Eco-Design)</p>
+          <span class="honor-date">Paris, Aug 2024</span>
+        </div>
+      </div>
+      <div class="honor-list">
+        <div class="honor-item">
+          <p class="honor-title">Semifinalist - Prototypes for Humanity</p>
+          <span class="honor-date">Dubai, Nov 2023</span>
+        </div>
+      </div>
+      <div class="honor-list">
+        <div class="honor-item">
+          <p class="honor-title">Industrial Design Studentship — The Royal Commission for the Exhibition of 1851</p>
+          <span class="honor-date">London, Oct 2023</span>
+        </div>
+        <div class="honor-item">
+          <p class="honor-title">Semifinalist — Biodesign Challenge 2023</p>
+          <span class="honor-date">New York City, Jun 2023</span>
+        </div>
+        <div class="honor-item">
+          <p class="honor-title">JASSO Scholarship — Japan Student Services Organization</p>
+          <span class="honor-date">Tokyo, Apr 2023</span>
+        </div>
+        <div class="honor-item">
+          <p class="honor-title">Top 12 Shortlist — Grand Challenge: Marine Sustainable Economies, RCA &amp; RNLI</p>
+          <span class="honor-date">London, Feb 2023</span>
+        </div>
+        <div class="honor-item">
+          <p class="honor-title">2nd Place — Penn Film Festival, UPenn Cinema &amp; Media Studies</p>
+          <span class="honor-date">Philadelphia, May 2022</span>
+        </div>
+        <div class="honor-item">
+          <p class="honor-title">Semifinalist — Biodesign Challenge × Google Hardware Design Studio</p>
+          <span class="honor-date">Sep 2021</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="clients">
+      <span class="section-label">Clients</span>
+      <p class="clients-list">Buzzfeed &nbsp;·&nbsp; Kerry Lemoon &nbsp;·&nbsp; Feels Studio &nbsp;·&nbsp; Nouri Mama &nbsp;·&nbsp; 
+        Rochester Polytechnic Institute BatLab &nbsp;·&nbsp; Yang Academy</p>
+    </section>
+
+    <section class="content-section" id="skills">
+      <span class="section-label">Skills &amp; Tools</span>
+      <!-- <h2>What I work with.</h2> -->
+      <div class="skills-categories">
+        <div class="skill-category">
+          <h4>Design &amp; Research</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Cross-cultural fieldwork</span>
+            <span class="skill-tag">User interviews</span>
+            <span class="skill-tag">Diary studies</span>
+            <span class="skill-tag">Journey mapping</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Hardware &amp; Making</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Arduino</span>            
+            <span class="skill-tag">Enclosure design</span>
+            <span class="skill-tag">Soft robotics</span>
+            <span class="skill-tag">Biomaterials</span>
+            <span class="skill-tag">Fabrication</span>
+            <span class="skill-tag">3D modeling & printing</span>            
+            <span class="skill-tag">Laser cutting</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Software &amp; Digital</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Adobe Creative Suite</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">MATLAB</span>
+            <span class="skill-tag">OCaml</span>
+            <span class="skill-tag">HTML / CSS / JS</span>
+            <span class="skill-tag">AR / XR</span>
+            <span class="skill-tag">Rhino</span>
+            <span class="skill-tag">Maya</span>
+            <span class="skill-tag">Palantir</span>
+            <span class="skill-tag">Tableau</span>
+            <span class="skill-tag">Mapbox</span>
+            <span class="skill-tag">Design systems</span>            
+            <span class="skill-tag">Data visualization</span>
+            <span class="skill-tag">GIS mapping</span>
+            <span class="skill-tag">Generative AI</span>            
+            <span class="skill-tag">Vibe coding</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Strategy &amp; Communication</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Executive presentations</span>
+            <span class="skill-tag">Workshop facilitation</span>
+            <span class="skill-tag">Product strategy</span>
+            <span class="skill-tag">Publication design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <span class="footer-sig">Designed &amp; developed by Sabrina Tian — 2025</span>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/sabrinactian/" target="_blank">LinkedIn ↗</a>
+    <a href="https://www.instagram.com/bysabrinatian/" target="_blank">Instagram ↗</a>
+    <a href="mailto:sabrina.c.tian@gmail.com">Email ↗</a>
+  </div>
+</footer>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>

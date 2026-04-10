@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+<title>Sabrina Tian</title>
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Sabrina Tian</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Work</a></li>
+    <!-- <li><a href="play.html">Play</a></li> -->
+    <li><a href="about.html">About</a></li>
+    <li><a href="/cdn-cgi/l/email-protection#27544645554e4946094409534e464967404a464e4b0944484a">Contact ↗</a></li>
+  </ul>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"><span class="theme-icon-moon">☽</span><span class="theme-icon-sun">☀</span></button>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="toggleMenu()">Work</a>
+  <a href="play.html" onclick="toggleMenu()">Play</a>
+  <a href="about.html" onclick="toggleMenu()">About</a>
+  <a href="/cdn-cgi/l/email-protection#3f4c5e5d4d56515e115c114b565e517f58525e5653115c5052" onclick="toggleMenu()">Contact ↗</a>
+</div>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-left">
+    <div>
+      <p class="hero-tag">Multidisciplinary Designer — Hardware × Software</p>
+      <h1 class="hero-headline">
+        Sabrina Tian is a <em>designer</em> & <em>researcher</em> with a focus on 
+        cross-cultural design, data storytelling, & human-centered innovation.
+      </h1>
+      <p class="hero-desc">
+        Currently @ Jacobs Engineering<br>
+        Previously @ MIT, Snap Inc, RCA x Imperial
+      </p>
+    </div>
+    <div class="hero-bottom">
+      <div class="hero-links">
+        <a href="https://www.linkedin.com/in/sabrinactian/" target="_blank">LinkedIn ↗</a>
+        <a href="https://www.instagram.com/bysabrinatian/" target="_blank">Instagram ↗</a>
+        <a href="/cdn-cgi/l/email-protection#d5a6b4b7a7bcbbb4fbb6fba1bcb4bb95b2b8b4bcb9fbb6bab8">Email ↗</a>
+      </div>
+      <span class="hero-scroll-hint">↓ scroll</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── FILTER BAR ── -->
+<div class="filter-bar" role="toolbar" aria-label="Filter projects by discipline">
+  <span class="filter-label">Filter by</span>
+  <div class="filter-divider" aria-hidden="true"></div>
+  <button class="filter-btn" data-filter="physical">
+    <span class="dot" aria-hidden="true"></span>Physical
+  </button>
+  <button class="filter-btn" data-filter="software">
+    <span class="dot" aria-hidden="true"></span>Software
+  </button>
+  <button class="filter-btn" data-filter="craft">
+    <span class="dot" aria-hidden="true"></span>Craft
+  </button>
+  <button class="filter-btn" data-filter="research">
+    <span class="dot" aria-hidden="true"></span>Research
+  </button>
+  <button class="filter-clear" aria-label="Clear filters">clear</button>
+</div>
+
+<!-- ── SELECTED WORK ── -->
+<section class="projects-section" aria-label="Selected work">
+  <div class="section-header">
+    <h2 class="section-title">Selected Work</h2>
+    <span class="section-count">04 projects</span>
+  </div>
+
+  <div class="projects-grid" data-stagger>
+
+    <!-- ══ PROJECT 1: Jacobs Dashboards ══ -->
+    <div class="project-card fade-up"
+       data-id="jacobs-dashboards"
+       data-tags="software research"
+       data-year="2024">
+      <div class="project-image">
+          <img src="assets/projects/jacobs-dashboards/home-jacobs.png" alt="Jacobs Dashboard">
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <div class="project-meta-left">
+            <span class="project-year">2025–Present</span>
+            <span class="ptag location">SF Bay Area</span>
+          </div>
+          <div class="project-meta-right">
+            <span class="ptag software">Software</span>
+            <span class="ptag research">Research</span>
+          </div>
+        </div>
+        <h3 class="project-title">Command-Level Dashboards</h3>
+        <p class="project-subtitle">Decision-making tools for engineers &amp; planners</p>
+      </div>
+    </div>
+
+    <!-- ══ PROJECT 2: Sensing Garden ══ -->
+    <a href="projects/sensing-garden.html"
+       class="project-card fade-up"
+       data-id="sensing-garden"
+       data-tags="physical research"
+       data-year="2025"
+       aria-label="Sensing Garden project">
+      <div class="project-image">
+        <img src="assets/projects/sensing-garden/home-sg.png" alt="Sensing Garden">
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <div class="project-meta-left">
+            <span class="project-year">2024–2025</span>
+            <span class="ptag location">Amsterdam, London, Boston, Laval</span>
+          </div>
+          <div class="project-meta-right">
+            <span class="ptag physical">Physical</span>
+            <span class="ptag research">Research</span>
+          </div>
+        </div>
+        <h3 class="project-title">Sensing Garden</h3>
+        <p class="project-subtitle">AI-enabled biodiversity monitoring hardware</p>
+        <!-- <div class="project-outcomes">
+          <span class="outcome-item">Deployed in 4 global cities</span>
+          <span class="outcome-item">35% faster prototyping via enclosure optimization</span>
+          <span class="outcome-item">GIS visualizations seen by 10k+ at global events</span>
+        </div> -->
+      </div>
+      <span class="project-arrow" aria-hidden="true">↗</span>
+    </a>
+
+    <!-- ══ PROJECT 3: Octopus ══ -->
+    <a href="https://senseable.mit.edu/octopus/"
+       class="project-card fade-up"
+       data-id="octopus"
+       data-tags="software craft"
+       data-year="2025"
+       aria-label="Octopus project"
+       target="_blank" rel="noopener noreferrer">
+      <div class="project-image">
+        <img src="assets/projects/octopus/home-octopus.png" alt="Octopus">
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <div class="project-meta-left">
+            <span class="project-year">2025</span>
+            <span class="ptag location">Amsterdam, Dubai, Milan</span>
+          </div>
+          <div class="project-meta-right">
+            <!-- <span class="ptag research">Research</span> -->
+            <span class="ptag craft">Craft</span>
+          </div>
+        </div>
+        <h3 class="project-title">Octopus</h3>
+        <p class="project-subtitle">Modular, urban sensing device</p>
+        <!-- <div class="project-outcomes">
+        </div> -->
+      </div>
+      <span class="project-arrow" aria-hidden="true">↗</span>
+    </a>
+
+    <!-- ══ PROJECT 4: Vleur ══ -->
+    <a href="projects/vleur.html"
+       class="project-card fade-up"
+       data-id="vleur"
+       data-tags="physical research"
+       data-year="2023"
+       aria-label="Vleur project">
+      <div class="project-image">
+        <img src="assets/projects/vleur/home-vleur.png" alt="Vleur"
+          onerror="this.style.display='none';this.parentNode.innerHTML='<div class=\'project-image-placeholder\'>[ vleur ]</div>'">
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <div class="project-meta-left">
+            <span class="project-year">2023</span>
+            <span class="ptag location">Tokyo, NYC, Dubai</span>
+          </div>
+          <div class="project-meta-right">
+            <span class="ptag physical">Physical</span>
+            <span class="ptag research">Research</span>
+          </div>
+        </div>
+        <h3 class="project-title">Vleur</h3>
+        <p class="project-subtitle">Transforming food waste into personal care products</p>
+        <!-- <div class="project-outcomes">
+          <span class="outcome-item">Exhibited at COP28, NYC, Shanghai, Dubai</span>
+          <span class="outcome-item">Biodesign Challenge + Design Intelligence Award</span>
+          <span class="outcome-item">Cross-cultural fieldwork across 3 countries</span>
+        </div> -->
+      </div>
+      <span class="project-arrow" aria-hidden="true">↗</span>
+    </a>
+
+    <!-- No-results message (hidden by default) -->
+    <p class="no-results" aria-live="polite">No projects match this filter.</p>
+
+  </div>
+</section>
+
+<!-- ── OVERFLOW (shown by JS when filters are active) ── -->
+<section class="overflow-section" aria-label="Other projects">
+  <button class="overflow-toggle" onclick="toggleOverflow(this)" aria-expanded="false">
+    <span class="overflow-label">Other projects</span>
+    <span class="overflow-icon" aria-hidden="true">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <line x1="7" y1="0" x2="7" y2="14" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="0" y1="7" x2="14" y2="7" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+    </span>
+  </button>
+  <div class="overflow-list" id="overflowList">
+    <!-- populated by index.js -->
+  </div>
+</section>
+
+<!-- ── ARCHIVE (shown in default view only) ── -->
+<section class="archive-section" aria-label="Project archive">
+  <button class="archive-toggle" onclick="toggleArchive(this)" aria-expanded="false">
+    <span class="archive-label">Archive — 16 more projects</span>
+    <span class="archive-icon" aria-hidden="true">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <line x1="7" y1="0" x2="7" y2="14" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="0" y1="7" x2="14" y2="7" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+    </span>
+  </button>
+
+  <div class="archive-list" id="archiveList">
+    <a href="https://senseable.mit.edu/slowing-design/" class="archive-item" target="_blank" rel="noopener noreferrer" data-preview="assets/projects/slowing-design/home-slowingbydesign.gif">
+      <span class="archive-num">05</span>
+      <span class="archive-name">Slowing by Design</span>
+      <!-- <div class="archive-middle"><span class="archive-sub">Circular supply chain systems</span><span class="archive-sep">|</span><span class="archive-location">London</span></div> -->
+      <div class="archive-middle"></span><span class="archive-location">London</span></div>
+      <div class="archive-tags"><span class="ptag research">Research</span><span class="ptag software">Software</span></div>
+    </a>
+    <a href="projects/ubiroot.html" class="archive-item" data-preview="assets/projects/ubiroot/home-ubiroot.gif">
+      <span class="archive-num">06</span>
+      <span class="archive-name">Ubiroot</span>
+      <!-- <div class="archive-middle"><span class="archive-sub">Circular supply chain systems</span><span class="archive-sep">|</span><span class="archive-location">London</span></div> -->
+      <div class="archive-middle"></span><span class="archive-location">London</span></div>
+      <div class="archive-tags"><span class="ptag research">Research</span><span class="ptag software">Software</span></div>
+    </a>
+    <div class="archive-item" data-preview="assets/projects/oscillating-cultures/home-oc.gif">
+      <span class="archive-num">07</span>
+      <span class="archive-name">Oscillating Cultures</span>
+      <!-- <div class="archive-middle"><span class="archive-sub">Circular supply chain systems</span><span class="archive-sep">|</span><span class="archive-location">London</span></div> -->
+      <div class="archive-middle"></span><span class="archive-location">London</span></div>
+      <div class="archive-tags"><span class="ptag software">Software</span><span class="ptag craft">Craft</span></div>
+    </div>
+    <a href="projects/plasticraft.html" class="archive-item" data-preview="assets/projects/plasticraft/home-plasticraft.gif">
+      <span class="archive-num">08</span>
+      <span class="archive-name">PlastiCraft: Perception of Waste in Japan</span>
+      <!-- <div class="archive-middle"><span class="archive-sub">Waste perception in Japan</span><span class="archive-sep">|</span><span class="archive-location">Tokyo</span></div> -->
+      <div class="archive-middle"></span><span class="archive-location">Tokyo</span></div>
+      <div class="archive-tags"><span class="ptag research">Research</span></div>
+    </a>
+    <a href="projects/superbloom.html" class="archive-item" data-preview="assets/projects/superbloom/home-superbloom.gif">
+      <span class="archive-num">09</span>
+      <span class="archive-name">Superbloom: the GID Return Exhibition</span>
+      <!-- <div class="archive-middle"><span class="archive-sub">GID return exhibition visual identity</span><span class="archive-sep">|</span><span class="archive-location">London</span></div> -->
+      <div class="archive-middle"></span><span class="archive-location">London</span></div>
+      <div class="archive-tags"><span class="ptag craft">Craft</span></div>
+    </a>
+    <a href="projects/akerue.html" class="archive-item" data-preview="assets/projects/akerue/home-akerue.gif">
+      <span class="archive-num">10</span>
+      <span class="archive-name">Upcycling Workshop @ AkeruE (Panasonic Creative Museum)</span>
+      <!-- <div class="archive-middle"><span class="archive-sub">Panasonic Creative Museum</span><span class="archive-sep">|</span><span class="archive-location">Tokyo</span></div> -->
+      <div class="archive-middle"></span><span class="archive-location">Tokyo</span></div>
+      <div class="archive-tags"><span class="ptag research">Research</span><span class="ptag physical">Physical</span></div>
+    </a>
+    <a href="projects/kirage.html" class="archive-item" data-preview="assets/projects/kirage/home-kirage.png">
+      <span class="archive-num">11</span>
+      <span class="archive-name">Kirage</span>
+      <!-- <div class="archive-middle"><span class="archive-sub">Urban transportation design</span><span class="archive-sep">|</span><span class="archive-location">Tokyo</span></div> -->
+      <div class="archive-middle"></span><span class="archive-location">Tokyo</span></div>
+      <div class="archive-tags"><span class="ptag research">Research</span><span class="ptag physical">Physical</span></div>
+    </a>
+    <a href="projects/skinsideout.html" class="archive-item" data-preview="assets/projects/skinsideout/home-skinsideout.gif">
+      <span class="archive-num">12</span>
+      <span class="archive-name">Skinside Out</span>
+      <!-- <div class="archive-middle"><span class="archive-sub">Biological material design</span><span class="archive-sep">|</span><span class="archive-location">London</span></div> -->
+      <div class="archive-middle"></span><span class="archive-location">London</span></div>
+      <div class="archive-tags"><span class="ptag physical">Physical</span><span class="ptag craft">Craft</span></div>
+    </a>
+    <a href="projects/language.html" class="archive-item" data-preview="assets/projects/tactile-language/home-language.png">
+      <span class="archive-num">13</span>
+      <span class="archive-name">Tactile Language Learning</span>
+      <!-- <div class="archive-middle"><span class="archive-sub">Arduino + machine learning</span><span class="archive-sep">|</span><span class="archive-location">London</span></div> -->
+      <div class="archive-middle"></span><span class="archive-location">London</span></div>
+      <div class="archive-tags"><span class="ptag physical">Physical</span></div>
+    </a>
+    <a href="projects/poolepavilion.html" class="archive-item" data-preview="assets/projects/poole-pavilion/home-poole.png">
+      <span class="archive-num">14</span>
+      <span class="archive-name">Poole Pavilion</span>
+      <!-- <div class="archive-middle"><span class="archive-sub">Grand Challenge top 12 shortlist</span><span class="archive-sep">|</span><span class="archive-location">London</span></div> -->
+      <div class="archive-middle"></span><span class="archive-location">Poole</span></div>
+      <div class="archive-tags"><span class="ptag research">Research</span><span class="ptag craft">Craft</span></div>
+    </a>
+    <a href="projects/babblebubble.html" class="archive-item" data-preview="assets/projects/babblebubble/home-bb.jpg">
+      <span class="archive-num">15</span>
+      <span class="archive-name">Babble Bubble</span>
+      <!-- <div class="archive-middle"><span class="archive-sub">Design psychology, packaging</span><span class="archive-sep">|</span><span class="archive-location">London</span></div> -->
+      <div class="archive-middle"></span><span class="archive-location">London</span></div>
+      <div class="archive-tags"><span class="ptag craft">Craft</span><span class="ptag research">Research</span></div>
+    </a>
+    <a href="projects/poldergeist.html" class="archive-item" data-preview="assets/projects/poldergeist/home-poldergeist.gif">
+      <span class="archive-num">16</span>
+      <span class="archive-name">Project Poldergeist: How will the Netherlands defend itself against climate change?</span>
+      <!-- <div class="archive-middle"><span class="archive-sub">Climate change animation — featured on documentary</span><span class="archive-sep">|</span><span class="archive-location">Netherlands</span></div> -->
+      <div class="archive-middle"></span><span class="archive-location">Netherlands</span></div>
+      <div class="archive-tags"><span class="ptag craft">Craft</span><span class="ptag research">Research</span></div>
+    </a>
+    <a href="projects/bicgia.html" class="archive-item" data-preview="assets/projects/bicgia/home-bicgia.png">
+      <span class="archive-num">17</span>
+      <span class="archive-name">Born in China, Grown in America</span>
+      <!-- <div class="archive-middle"><span class="archive-sub">Publication design, risograph</span><span class="archive-sep">|</span><span class="archive-location">Philadelphia</span></div> -->
+      <div class="archive-middle"></span><span class="archive-location">Philadelphia</span></div>
+      <div class="archive-tags"><span class="ptag craft">Craft</span><span class="ptag research">Research</span></div>
+    </a>
+    <a href="projects/scoby.html" class="archive-item" data-preview="assets/projects/scoby/home-scoby.JPG">
+      <span class="archive-num">18</span>
+      <span class="archive-name">SCOBY: Experiment & Tea Bags</span>
+      <!-- <div class="archive-middle"><span class="archive-sub">Biological design, materials</span><span class="archive-sep">|</span><span class="archive-location">Philadelphia</span></div> -->
+      <div class="archive-middle"></span><span class="archive-location">Philadelphia</span></div>
+      <div class="archive-tags"><span class="ptag physical">Physical</span><span class="ptag research">Research</span></div>
+    </a>
+    <div class="archive-item" data-preview="assets/projects/test-vemlidy/home-test.png">
+      <span class="archive-num">19</span>
+      <span class="archive-name">T.E.S.T with Vemlidy</span>
+      <div class="archive-middle"></span><span class="archive-location">New York City</span></div>
+      <div class="archive-tags"><span class="ptag software">Software</span></div>
+    </div>
+    <a href="projects/theia.html" class="archive-item" data-preview="assets/projects/theia/home-theia.png">
+      <span class="archive-num">20</span>
+      <span class="archive-name">Theia Health Ventures</span>
+      <!-- <div class="archive-middle"><span class="archive-sub">Web design &amp; brand strategy</span><span class="archive-sep">|</span><span class="archive-location">Philadelphia</span></div> -->
+      <div class="archive-middle"></span><span class="archive-location">Philadelphia</span></div>
+      <div class="archive-tags"><span class="ptag software">Software</span><span class="ptag craft">Craft</span></div>
+    </a>
+    <a href="projects/futureofwaste.html" class="archive-item" data-preview="assets/projects/future-of-waste/home-waste.png">
+      <span class="archive-num">21</span>
+      <span class="archive-name">The Future of Waste</span>
+      <!-- <div class="archive-middle"><span class="archive-sub">Speculative design, 3D modeling</span><span class="archive-sep">|</span><span class="archive-location">Philadelphia</span></div> -->
+      <div class="archive-middle"></span><span class="archive-location">Philadelphia</span></div>
+      <div class="archive-tags"><span class="ptag craft">Craft</span><span class="ptag research">Research</span></div>
+    </a>
+    <a href="projects/heartofvalleysdelight.html" class="archive-item" data-preview="assets/projects/heart-of-valley/home-heartofvalley.jpeg">
+      <span class="archive-num">22</span>
+      <span class="archive-name">Heart of Valley's Delight</span>
+      <!-- <div class="archive-middle"><span class="archive-sub">Biological design, social impact</span><span class="archive-sep">|</span><span class="archive-location">San Jose</span></div> -->
+      <div class="archive-middle"></span><span class="archive-location">San Jose</span></div>
+      <div class="archive-tags"><span class="ptag craft">Craft</span><span class="ptag research">Research</span></div>
+    </a>
+  </div>
+</section>
+
+<!-- ── ABOUT STRIP ── -->
+<section class="about-strip" aria-label="About Sabrina">
+  <div class="about-strip-left">
+    <span class="about-strip-label">About</span>
+    <h2 class="about-strip-title">Sabrina Tian</h2>
+    <a href="about.html" class="about-link">Full bio →</a>
+  </div>
+  <div class="about-strip-right">
+    <p>
+      MSc/MA Global Innovation Design @ Imperial College London × Royal College of Art <br>
+      BA Design + Computational Cognitive Science @ University of Pennsylvania.
+    </p>
+    <div class="skills-row">
+      <span class="skill-chip">Product design</span> 
+      <span class="skill-chip">Digital strategy</span>     
+      <span class="skill-chip">Hardware prototyping</span>
+      <span class="skill-chip">Design systems</span>
+      <span class="skill-chip">User research</span>
+      <span class="skill-chip">Cross-cultural research</span>
+      <span class="skill-chip">Data visualization</span>
+      <span class="skill-chip">AR / XR</span>
+      <span class="skill-chip">Biodesign</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-sig">Designed &amp; developed with &#x2764; + &#x263B; by Sabrina Tian 2026</span>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/sabrinactian/" target="_blank">LinkedIn ↗</a>
+    <a href="https://www.instagram.com/bysabrinatian/" target="_blank">Instagram ↗</a>
+    <a href="mailto:sabrina.c.tian@gmail.com">Email ↗</a>
+  </div>
+</footer>
+
+<script src="scripts/main.js"></script>
+<script src="scripts/index.js"></script>
+</body>
+</html>

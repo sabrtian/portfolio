@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+<title>Kirage — Sabrina Tian</title>
+<link rel="stylesheet" href="../styles/tokens.css">
+<link rel="stylesheet" href="../styles/base.css">
+<link rel="stylesheet" href="../styles/project.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Sabrina Tian</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Work</a></li>
+    <!-- <li><a href="../play.html">Play</a></li> -->
+    <li><a href="../about.html">About</a></li>
+    <li><a href="mailto:sabrina.c.tian@gmail.com">Contact ↗</a></li>
+  </ul>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"><span class="theme-icon-moon">☽</span><span class="theme-icon-sun">☀</span></button>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html" onclick="toggleMenu()">Work</a>
+  <a href="../about.html" onclick="toggleMenu()">About</a>
+  <a href="mailto:sabrina.c.tian@gmail.com" onclick="toggleMenu()">Contact ↗</a>
+</div>
+
+<header class="project-header">
+  <div>
+    <a href="../index.html" class="back-link">← All work</a>
+    <span class="project-eyebrow">Keio University</span>
+    <h1 class="project-h1"><em>Kirage</em><br>Urban Waterway Revitalization</h1>
+    <p class="project-intro">
+      By 2043, Tokyo is expected to grow 7.1% in population, with goals of becoming a
+      pedestrian-friendly city. How can we preserve the city's cultural heritage while moving
+      into the future? Kirage is a boat attachment using a bio-signal system to monitor and
+      purify water quality as it moves through Tokyo's neglected urban waterways.
+    </p>
+    <div class="project-tags-row">
+      <span class="ptag research">Research</span>
+      <span class="ptag software">Software</span>
+    </div>
+  </div>
+
+  <div class="project-meta-sidebar">
+    <div class="meta-block">
+      <p class="meta-label">My Role</p>
+      <p class="meta-value">Research & Concept Design</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Timeline</p>
+      <p class="meta-value">Summer 2023 — 4 weeks</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Team</p>
+      <p class="meta-value">Samantha I-Han Hsieh, Ariane Lucchini, Lili Mineta, Yifei Zhang, Junichi Yamaoka, Matthew Waldman</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Location</p>
+      <p class="meta-value">Shinkiba, Tokyo</p>
+    </div>
+  </div>
+</header>
+
+<div class="hero-image">
+  <img src="../assets/projects/kirage/home-kirage.png" alt="Kirage">
+</div>
+
+<div class="project-content">
+
+  <nav class="content-nav" aria-label="Page sections">
+    <p class="content-nav-title">Contents</p>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#challenge">Challenge</a></li>
+      <li><a href="#outcome">Outcome</a></li>
+      <li><a href="#results">Results</a></li>
+    </ul>
+  </nav>
+
+  <div class="project-body">
+
+    <div class="content-block" id="overview">
+      <span class="block-label">Overview</span>
+      <h2 class="block-h2">How can Tokyo preserve its cultural heritage while becoming the city of the future?</h2>
+      <div class="block-body">
+        <p>
+          Shinkiba — whose name means "new lumberyard" — was established in 1930, served as a
+          landfill from 1957 to 1966, and completed land reclamation in 2021. Today it holds
+          entertainment venues, industrial spaces, and green areas: a layered history embedded
+          in urban geography.
+        </p>
+        <p>
+          As Tokyo's population grows and the city pursues pedestrian-friendly infrastructure,
+          its neglected waterways represent both a challenge and an opportunity. Kirage explores
+          how speculative design can reconnect residents with the city's waterways, cultural
+          memory, and ecological future.
+        </p>
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/kirage/kirage-history.png" alt="Shinkiba history map">
+      </div>
+      <p class="media-caption">Shinkiba's land use history and urban transformation. <br>
+        Source: <a href="https://http://chizu-kyoukai.com/tebiki/" target="blank">Geospatial Information 
+          Authority of Japan, the Ministry of Land, Infrastructure, Transport and Tourism</a></p>
+    </div>
+
+    <div class="content-block" id="challenge">
+      <span class="block-label">The Challenge</span>
+      <h2 class="block-h2">Three problems with the Sumida River — and a city growing faster than its infrastructure.</h2>
+      <div class="block-body">
+        <p>
+          Tokyo's population is projected to increase 7.1% by 2030, with 52% growth among
+          foreign nationals. The local government is pursuing pedestrian-friendly infrastructure —
+          reclaiming and restructuring existing transportation corridors. But the waterways have
+          been left behind.
+        </p>
+      </div>
+
+      <div class="media-2col">
+        <div class="media-2col-item">
+          <img src="../assets/projects/kirage/kirage-senrogai.jpeg" alt="Senrogai district">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/kirage/kirage-nihonbashi.jpeg" alt="Nihonbashi waterway">
+        </div>
+      </div>
+
+      <p class="media-caption"> (Source: <a href="https://metropolisjapan.com/the-future-of-tokyo/" target="blank">Metropolis</a>)</p>
+
+      <div class="block-body">
+        <p>Left: Senrogai ("Railroad Town") is a 1.7 development on the former 
+          Odakyu tracks designated for shopping, markets, traditional ryokan, hotel, etc.</p>
+        <p>
+      </div>
+
+      <div class="block-body">
+        <p>Right: Nihonbashi is one of the many waterways that were destroyed by Japan's post-war 
+          industrialization due to manufacturing, human waste, and railroad construction that prevented 
+          pedestrians from using the river space.</p>
+        <p>
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/kirage/kirage-insights.png" alt="Research insights">
+      </div>
+    </div>
+
+    <div class="process-steps">
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <div class="step-content">
+            <h4>Highways obstruct riverwalks</h4>
+            <p>Post-war industrialization destroyed pedestrian-accessible waterways through pollution and infrastructure built over canals.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <div class="step-content">
+            <h4>Waterways remain neglected</h4>
+            <p>Re-engaging residents requires education and community involvement — the river is out of sight and out of mind.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">03</span>
+          <div class="step-content">
+            <h4>Water stagnation persists</h4>
+            <p>Concrete support columns and sewage runoff compromise water quality and restrict commercial boat accessibility.</p>
+          </div>
+        </div>
+      </div>
+
+    <div class="content-block" id="outcome">
+      <span class="block-label">Outcome</span>
+      <h2 class="block-h2">A boat attachment that purifies water and detects pollution as it moves.</h2>
+      <div class="block-body">
+        <p>
+          Kirage is a speculative attachment for existing waterway vessels. It harnesses two
+          emerging biological technologies: cellulose nano-crystal powder — developed at Chalmers
+          University — which purifies water through absorption and sunlight-triggered pollutant
+          breakdown; and Green Fluorescent Protein (GFP) extracted from jellyfish, which acts
+          as a biosensor by fluorescing in the presence of pollutants.
+        </p>
+        <p>
+          Together, these systems allow the vessel to passively monitor and improve water quality
+          on each journey — transforming existing boat routes into a distributed environmental
+          sensing and remediation network.
+        </p>
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/kirage/kirage-wood.gif" alt="Kirage material study">
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/kirage/kirage-jellyfish.gif" alt="GFP jellyfish biosensor">
+      </div>
+      <p class="media-caption">Material studies: wood structure and Green Fluorescent Protein 
+        (GFP) biosensor from jellyfish.</p>
+
+      <div class="media-full">
+        <img src="../assets/projects/kirage/home-kirage.png" alt="Kirage">
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/kirage/kirage.png" alt="Kirage conceptual design">
+      </div>
+    </div>
+
+    <div class="content-block" id="results">
+      <span class="block-label">Results</span>
+      <h2 class="block-h2">A speculative framework for cities reclaiming their waterways.</h2>
+
+      <div class="block-body">
+        <p>
+          Kirage proposes that urban waterway revitalization doesn't require tearing down infrastructure
+          — it can begin with what already floats. By instrumenting existing vessels with biological
+          sensing and purification technology, cities like Tokyo can begin to reconnect residents
+          with their waterways while actively improving water quality.
+        </p>
+        <p>
+          The project demonstrates how speculative design can bridge deep historical research,
+          biological science, and urban planning into a coherent future proposition — grounded
+          in a specific place and its particular constraints.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="project-nav">
+  <a href="akerue.html" class="project-nav-item project-nav-prev">
+    <p class="project-nav-label">← Previous</p>
+    <h3 class="project-nav-title">Upcycling Workshop @ AkeruE</h3>
+    <p class="project-nav-desc">Upcycling workshop at Panasonic Creative Museum</p>
+  </a>
+  <a href="skinsideout.html" class="project-nav-item project-nav-next">
+    <p class="project-nav-label">Next →</p>
+    <h3 class="project-nav-title">Skinside Out</h3>
+    <p class="project-nav-desc">Biological material design with SCOBY</p>
+  </a>
+</div>
+
+<footer>
+  <span class="footer-sig">Designed &amp; developed with &#x2764; + &#x263B; by Sabrina Tian 2026</span>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/sabrinactian/" target="_blank">LinkedIn ↗</a>
+    <a href="https://www.instagram.com/bysabrinatian/" target="_blank">Instagram ↗</a>
+    <a href="mailto:sabrina.c.tian@gmail.com">Email ↗</a>
+  </div>
+</footer>
+
+<script src="../scripts/main.js"></script>
+</body>
+</html>

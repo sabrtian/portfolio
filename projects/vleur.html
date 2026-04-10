@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+<title>Vleur — Sabrina Tian</title>
+<link rel="stylesheet" href="../styles/tokens.css">
+<link rel="stylesheet" href="../styles/base.css">
+<link rel="stylesheet" href="../styles/project.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Sabrina Tian</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Work</a></li>
+    <!-- <li><a href="../play.html">Play</a></li> -->
+    <li><a href="../about.html">About</a></li>
+    <li><a href="mailto:sabrina.c.tian@gmail.com">Contact ↗</a></li>
+  </ul>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"><span class="theme-icon-moon">☽</span><span class="theme-icon-sun">☀</span></button>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html" onclick="toggleMenu()">Work</a>
+  <a href="../play.html" onclick="toggleMenu()">Play</a>
+  <a href="../about.html" onclick="toggleMenu()">About</a>
+  <a href="mailto:sabrina.c.tian@gmail.com" onclick="toggleMenu()">Contact ↗</a>
+</div>
+
+<!-- ════════════════════════════════════════
+     PROJECT HEADER
+     ════════════════════════════════════════ -->
+<header class="project-header">
+  <div>
+    <a href="../index.html" class="back-link">← All work</a>
+    <span class="project-eyebrow">Biodesign Challenge NYC x Keio University, Samcara Circular Design Research Lab</span>
+    <h1 class="project-h1"><em>Vleur</em><br>Transforming Food Waste into Personal Care</h1>
+    <p class="project-intro">
+      Globally, 1/3 of food is wasted every year — in Japan, 6 million tonnes, where 96% ends up in landfills.
+      Vleur is a household device that empowers individuals to upcycle food waste into customized essential oils
+      and skincare products.
+    </p>
+    <div class="project-tags-row">
+      <span class="ptag physical">Physical</span>
+      <span class="ptag research">Research</span>
+      <span class="ptag physical">Biodesign</span>
+    </div>
+  </div>
+
+  <div class="project-meta-sidebar">
+    <div class="meta-block">
+      <p class="meta-label">My Role</p>
+      <p class="meta-value">Product Strategy & Design Researcher</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Timeline</p>
+      <p class="meta-value">Summer 2023 — 3 months</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Team</p>
+      <p class="meta-value">Magdalena Garibaldi, Tianyu Jin, Hao Liu, Suguira Masaya, Ami Torii, Matthew Waldman </p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Location</p>
+      <p class="meta-value">Tokyo, New York</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Featured In</p>
+      <p class="meta-value">Biodesign Challenge Summit 2023 - Biodesign Challenge; <br>
+        Metamorphosis Exhibition - Parsons School of Design; <br>
+        COP28 Showcase, Prototypes for Humanity — Dubai Future Foundation
+      </p>
+    </div>
+  </div>
+</header>
+
+<!-- ════════════════ HERO IMAGE ════════════════ -->
+<div class="hero-image">
+  <img src="../assets/projects/vleur/vleur01.png" alt="Vleur device">
+</div>
+
+<!-- ════════════════ CONTENT ════════════════ -->
+<div class="project-content">
+
+  <nav class="content-nav" aria-label="Page sections">
+    <p class="content-nav-title">Contents</p>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#challenge">Challenge</a></li>
+      <li><a href="#outcome">Outcome</a></li>
+      <li><a href="#results">Results</a></li>
+    </ul>
+  </nav>
+
+  <div class="project-body">
+
+    <!-- ══ BLOCK: OVERVIEW ══ -->
+    <div class="content-block" id="overview">
+      <span class="block-label">Overview</span>
+      <h2 class="block-h2">How might we make upcycling food waste more accessible to individuals and 
+        integrate food waste products into our daily lives? </h2>
+      <div class="block-body">
+        <p>
+          Vleur is a 3-in-1 household device designed with Japanese consumers in mind. With limited countertop
+          and storage space in Japanese kitchens, its compact form combines ultrasonic waves, maceration, and
+          bacterial cellulose fermentation to preserve the properties of organic compounds from food waste.
+        </p>
+        <p>
+          The device allows individuals to customize their self-care routines with eco-friendly alternatives
+          to essential oils and skincare products — made entirely from what would otherwise be thrown away.
+        </p>
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/vleur/vleur-r3.gif" alt="Vleur process animation">
+      </div>
+    </div>
+
+    <!-- ══ BLOCK: CHALLENGE ══ -->
+    <div class="content-block" id="challenge">
+      <span class="block-label">The Challenge</span>
+      <h2 class="block-h2">Food waste doesn't disappear — it just moves downstream.</h2>
+      <div class="block-body">
+        <p>
+          Our team conducted research through user interviews, field visits, and material experimentation.
+          My visit to Itabashi Incineration Plant — one of Tokyo's 23 incineration facilities — revealed
+          a critical insight: all waste, no matter how carefully sorted by individuals, ultimately ends up
+          in incineration or landfills.
+        </p>
+        <p>
+          The core finding: food needs to be separated from the municipal waste stream entirely, before
+          collection. The only viable intervention point is in the home.
+        </p>
+      </div>
+
+      <div class="media-2col">
+        <div class="media-2col-item">
+          <img src="../assets/projects/vleur/vleur-r1.png" alt="Field visit to Itabashi Incineration Plant">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/vleur/vleur-r2.png" alt="Research documentation">
+        </div>
+      </div>
+      <p class="media-caption">Field visit to Itabashi Incineration Plant, Tokyo — one of 23 incineration facilities in the city.</p>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <div class="step-content">
+            <h4>Intercept waste at the source</h4>
+            <p>96% of Japan's food waste ends in landfills. The only effective intervention is before it enters the stream.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <div class="step-content">
+            <h4>Fit the Japanese kitchen</h4>
+            <p>Limited countertop and storage space required a compact, multifunctional form factor.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">03</span>
+          <div class="step-content">
+            <h4>Make upcycling desirable</h4>
+            <p>Behavior change requires personal benefit. Linking waste to beauty routines creates a tangible incentive.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">04</span>
+          <div class="step-content">
+            <h4>Preserve organic compounds</h4>
+            <p>The extraction process had to maintain the active properties of food-derived ingredients for skincare use.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ BLOCK: OUTCOME ══ -->
+    <div class="content-block" id="outcome">
+      <span class="block-label">Outcome</span>
+      <h2 class="block-h2">A device that turns kitchen scraps into a self-care ritual.</h2>
+      <div class="block-body">
+        <p>
+          Vleur combines three processes in a single compact unit: ultrasonic extraction, maceration, and
+          bacterial cellulose fermentation. Together they allow users to transform fruit peels, vegetable
+          trimmings, and other organic scraps into essential oils and skincare actives — customized to their
+          own preferences.
+        </p>
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/vleur/vleur-explanation.png" alt="Vleur 3-in-1 functionality diagram">
+      </div>
+      <p class="media-caption">Technical diagram of Vleur's three-stage extraction process.</p>
+
+      <div class="media-2col">
+        <div class="media-2col-item">
+          <img src="../assets/projects/vleur/vleur-02.png" alt="Vleur 3D model render">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/vleur/vleur-03.png" alt="Vleur product visualization">
+        </div>
+      </div>
+      <p class="media-caption">3D model by Hao Liu.</p>
+    </div>
+
+    <!-- ══ BLOCK: RESULTS ══ -->
+    <div class="content-block" id="results">
+      <span class="block-label">Results</span>
+      <h2 class="block-h2">Exhibited internationally, recognized at the Biodesign Challenge.</h2>
+      <div class="block-body">
+        <p>
+          Vleur was a semifinalist in June 2023 at the Biodesign Challenge Summit in New York — the leading
+          international competition for biodesign at the intersection of biology, design, and sustainability - and
+          exhibited at the <em>Metamorphosis</em> exhibition at Parsons School of Design. Vleur has continued to 
+          reach global recognition, with showcases at <a href="https://www.prototypesforhumanity.com/prototypes/vleur" 
+          target="_blank" rel="noopener noreferrer">COP28</a> in Dubai, <a href="https://dna.paris/winner/zoom.php?eid=71-91975-24" 
+          target="_blank" rel="noopener noreferrer"> Design Intelligence Awards</a> in Shanghai, and the 
+          <a href="https://dna.paris/winner/zoom.php?eid=71-91975-24" target="_blank" rel="noopener noreferrer">Paris Design Awards (Eco Design category)</a> . 
+        </p>
+
+        <p>
+          The project's material research strand — focused on biological materials derived from food waste —
+          continued as a separate body of work. See <a href="https://sabrinatian.com/skinsideout.html" target="_blank" rel="noopener noreferrer">Skinside Out ↗</a>.
+        </p>
+
+        <!-- <div class="media-full">
+          <img src="../assets/projects/vleur/vleur-03.png" alt="Vleur product visualization">      
+        </div> -->
+      </div>
+
+      <!-- <div class="insights-grid">
+        <div class="insight-card">
+          <p class="insight-num">01</p>
+          <p class="insight-text">Presented at the 2023 Biodesign Challenge Summit, New York — Keio University.</p>
+        </div>
+        <div class="insight-card">
+          <p class="insight-num">02</p>
+          <p class="insight-text">Featured in the <em>Metamorphosis</em> exhibition at Parsons School of Design.</p>
+        </div>
+        <div class="insight-card">
+          <p class="insight-num">03</p>
+          <p class="insight-text">Material experimentation extended into a standalone research project — Skinside Out.</p>
+        </div>
+        <div class="insight-card">
+          <p class="insight-num">04</p>
+          <p class="insight-text">Addresses 6 million tonnes of annual food waste in Japan — 96% of which enters incineration or landfill.</p>
+        </div> -->
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ════════════════ PROJECT NAV ════════════════ -->
+<div class="project-nav">
+  <a href="sensing-garden.html" class="project-nav-item project-nav-prev">
+    <p class="project-nav-label">← Previous</p>
+    <h3 class="project-nav-title">Sensing Garden</h3>
+    <p class="project-nav-desc">AI biodiversity hardware</p>
+  </a>
+  <a href="ubiroot.html" class="project-nav-item project-nav-next">
+    <p class="project-nav-label">Next →</p>
+    <h3 class="project-nav-title">Ubiroot</h3>
+    <p class="project-nav-desc">Circular supply chain systems</p>
+  </a>
+</div>
+
+<footer>
+  <span class="footer-sig">Designed &amp; developed with &#x2764; + &#x263B; by Sabrina Tian 2026</span>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/sabrinactian/" target="_blank">LinkedIn ↗</a>
+    <a href="https://www.instagram.com/bysabrinatian/" target="_blank">Instagram ↗</a>
+    <a href="mailto:sabrina.c.tian@gmail.com">Email ↗</a>
+  </div>
+</footer>
+
+<script src="../scripts/main.js"></script>
+</body>
+</html>

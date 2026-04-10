@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+<title>Ubiroot — Sabrina Tian</title>
+<link rel="stylesheet" href="../styles/tokens.css">
+<link rel="stylesheet" href="../styles/base.css">
+<link rel="stylesheet" href="../styles/project.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Sabrina Tian</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Work</a></li>
+    <!-- <li><a href="../play.html">Play</a></li> -->
+    <li><a href="../about.html">About</a></li>
+    <li><a href="mailto:sabrina.c.tian@gmail.com">Contact ↗</a></li>
+  </ul>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"><span class="theme-icon-moon">☽</span><span class="theme-icon-sun">☀</span></button>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html" onclick="toggleMenu()">Work</a>
+  <a href="../about.html" onclick="toggleMenu()">About</a>
+  <a href="mailto:sabrina.c.tian@gmail.com" onclick="toggleMenu()">Contact ↗</a>
+</div>
+
+<header class="project-header">
+  <div>
+    <a href="../index.html" class="back-link">← All work</a>
+    <span class="project-eyebrow">Imperial College London x Royal College of Art</span>
+    <h1 class="project-h1"><em>Ubiroot</em><br>Circular Supply Chain Systems</h1>
+    <p class="project-intro">
+      The rise of counterfeit and faulty chips — a $75 billion global threat — compromises product safety
+      and weakens fragile semiconductor supply chains. Ubiroot enables a comprehensive view of each silicon
+      chip's lifecycle through a digital twin and nano-sized tags for chip authentication and circularity.
+    </p>
+    <div class="project-tags-row">
+      <span class="ptag research">Research</span>
+      <span class="ptag software">Software</span>
+      <span class="ptag craft">Systems Design</span>
+    </div>
+  </div>
+
+  <div class="project-meta-sidebar">
+    <div class="meta-block">
+      <p class="meta-label">My Role</p>
+      <p class="meta-value">Solo — Research, Strategy & Design</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Timeline</p>
+      <p class="meta-value">2024 — 8 months</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Advisors</p>
+      <p class="meta-value">Charlotte Slingsby, John Stevens, Gareth Loudon, Larissa Kunstel-Tabet</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Location</p>
+      <p class="meta-value">London</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Featured In</p>
+      <p class="meta-value">2024 Design Intelligence Awards — Honorable Mention; <br>
+        Hebei International Industrial Desgin x Asia Design Week 2024; <br>
+        Royal College of Art & Imperial College London</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">With Support From</p>
+      <p class="meta-value">The Royal Commission for the Exhibition of 1851</p>
+    </div>
+  </div>
+</header>
+
+<div class="hero-image">
+  <img src="../assets/projects/ubiroot/ubiroot-tracking.jpg" alt="Ubiroot tracking platform">
+</div>
+
+<div class="project-content">
+
+  <nav class="content-nav" aria-label="Page sections">
+    <p class="content-nav-title">Contents</p>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#challenge">Challenge</a></li>
+      <li><a href="#outcome">Outcome</a></li>
+      <li><a href="#results">Results</a></li>
+    </ul>
+  </nav>
+
+  <div class="project-body">
+
+    <div class="content-block" id="overview">
+      <span class="block-label">Overview</span>
+      <h2 class="block-h2">How might we track individual chips to identify faults, reduce risk, and build supply chain resilience?</h2>
+      <div class="block-body">
+        <p>
+          As our digital infrastructure expands — from AI and green tech to consumer electronics — we are increasingly dependent
+          on the semiconductor industry. The current supply chain is highly vulnerable to disruptions like natural disasters and 
+          pandemics, and its reliance on mining critical rare minerals is unsustainable.
+        </p>
+        <p>
+          Ubiroot enables a comprehensive view of each silicon chip's lifecycle through the integration of a
+          digital twin and nano-sized tags for chip authentication and circularity. As silicon chips continue
+          to decrease in size, Ubiroot delves into the microscopic realm, championing resilience and
+          sustainability within the global semiconductor industry.
+        </p>
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/ubiroot/home-ubiroot.gif" alt="Ubiroot system overview">
+      </div>
+      <p class="media-caption">Sustainability &amp; Logistics Overview with Integrated AI Chatbot.</p>
+    </div>
+
+    <div class="content-block" id="challenge">
+      <span class="block-label">The Challenge</span>
+      <h2 class="block-h2">A $75 billion counterfeit problem — with no chip-level visibility.</h2>
+      <div class="block-body">
+        <p>
+          The counterfeit chip industry thrives on opacity. Without individual chip-level traceability,
+          supply chain managers cannot detect faults, authenticate components, or prepare for disruptions.
+          Meanwhile, growing scarcity of critical raw materials and mounting e-waste are escalating costs,
+          environmental harm, and geopolitical tension.
+        </p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <div class="step-content">
+            <h4>Counterfeit chips at scale</h4>
+            <p>$75B in counterfeit and faulty chips compromises product safety across AI, defence, and consumer electronics.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <div class="step-content">
+            <h4>No end-to-end lifecycle visibility</h4>
+            <p>Chips move through dozens of hands globally with no unified identity or tracking system.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">03</span>
+          <div class="step-content">
+            <h4>Critical mineral dependency</h4>
+            <p>Semiconductor production relies on rare minerals under tightening environmental and geopolitical pressure.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">04</span>
+          <div class="step-content">
+            <h4>E-waste at end-of-life</h4>
+            <p>Without circularity infrastructure, valuable materials are lost to landfill rather than recovered.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/ubiroot/ubiroot-sm.jpg" alt="System map">
+      </div>
+      <p class="media-caption">System map.</p>
+    </div>
+
+    <div class="content-block" id="outcome">
+      <span class="block-label">Outcome</span>
+      <h2 class="block-h2">Real-time traceability from raw material to end-of-life.</h2>
+      <div class="block-body">
+        <p>
+          Ubiroot introduces nano-sized etched tags that link with existing chip identifiers to generate a
+          unique ID, creating a transparent database that tracks each chip from raw material to end-of-life.
+          This forms the basis of a digital twin platform, enabling real-time monitoring and simulations for
+          sustainability, logistics, and risk management.
+        </p>
+        <p>
+          During inspection, each chip's tag is verified and its status logged to the blockchain — ensuring
+          transparency and traceability for supply chain managers at every stage.
+        </p>
+      </div>
+
+      <div class="media-full">
+        <img src="../assets/projects/ubiroot/ubiroot-home.jpg" alt="Ubiroot">
+      </div>
+    </div>
+
+    <div class="content-block" id="results">
+      <span class="block-label">Results</span>
+      <h2 class="block-h2">Enabling a circular semiconductor economy.</h2>
+      <div class="block-body">
+        <p>
+          Without intervention, the industry faces rising silicon scarcity, ecological degradation, e-waste,
+          and geopolitical instability. Ubiroot's platform supports a circular future — facilitating urban
+          mining, recycling, closed-loop systems, disassembly-ready design, and cross-sector collaboration.
+        </p>
+        <p>
+          Ubiroot received an Honorable Mention at the 2024 Design Intelligence Awards and was selected for
+          Asia Design Week 2024. It has been showcased at the Royal College of Art, Imperial College London,
+          and the Royal Commission for the Exhibition of 1851.
+        </p>
+      </div>
+
+      <div class="media-2col">
+        <div class="media-2col-item">
+          <img src="../assets/projects/ubiroot/ubiroot-e.jpg" alt="Ubiroot exhibition">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/ubiroot/ubiroot-e1.jpg" alt="Ubiroot detail">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/ubiroot/ubiroot-e3.jpg" alt="Ubiroot exhibition">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/ubiroot/ubiroot-e4.jpg" alt="Ubiroot exhibition">
+        </div>
+      </div>
+      <div class="media-full">
+        <img src="../assets/projects/ubiroot/ubiroot-adw.JPG" alt="Ubiroot Asia Design Week">
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="project-nav">
+  <a href="vleur.html" class="project-nav-item project-nav-prev">
+    <p class="project-nav-label">← Previous</p>
+    <h3 class="project-nav-title">Vleur</h3>
+    <p class="project-nav-desc">Transforming food waste into personal care products</p>
+  </a>
+  <a href="plasticraft.html" class="project-nav-item project-nav-next">
+    <p class="project-nav-label">Next →</p>
+    <h3 class="project-nav-title">PlastiCraft</h3>
+    <p class="project-nav-desc">Waste perception in Japan</p>
+  </a>
+</div>
+
+<footer>
+  <span class="footer-sig">Designed &amp; developed with &#x2764; + &#x263B; by Sabrina Tian 2026</span>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/sabrinactian/" target="_blank">LinkedIn ↗</a>
+    <a href="https://www.instagram.com/bysabrinatian/" target="_blank">Instagram ↗</a>
+    <a href="mailto:sabrina.c.tian@gmail.com">Email ↗</a>
+  </div>
+</footer>
+
+<script src="../scripts/main.js"></script>
+</body>
+</html>

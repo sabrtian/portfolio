@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+<title>Sensing Garden — Sabrina Tian</title>
+<link rel="stylesheet" href="../styles/tokens.css">
+<link rel="stylesheet" href="../styles/base.css">
+<link rel="stylesheet" href="../styles/project.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Sabrina Tian</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Work</a></li>
+    <!-- <li><a href="../play.html">Play</a></li> -->
+    <li><a href="../about.html">About</a></li>
+    <li><a href="mailto:sabrina.c.tian@gmail.com">Contact ↗</a></li>
+  </ul>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"><span class="theme-icon-moon">☽</span><span class="theme-icon-sun">☀</span></button>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html" onclick="toggleMenu()">Work</a>
+  <a href="../about.html" onclick="toggleMenu()">About</a>
+  <a href="mailto:sabrina.c.tian@gmail.com" onclick="toggleMenu()">Contact ↗</a>
+</div>
+
+<header class="project-header">
+  <div>
+    <a href="../index.html" class="back-link">← All work</a>
+    <span class="project-eyebrow">Massachusetts Institute of Technology</span>
+    <h1 class="project-h1"><em>Sensing Garden</em><br>Insect Biodiversity Monitoring</h1>
+    <p class="project-intro">
+      Around 65% of insect species could go extinct over the next hundred years — yet most monitoring tools
+      detect only a fraction of species. Sensing Garden combines computer vision and edge AI in
+      a weatherproof, community-deployable device to track insect biodiversity at scale.
+    </p>
+    <div class="project-tags-row">
+      <span class="ptag research">Research</span>
+      <span class="ptag craft">Hardware</span>
+      <span class="ptag software">Computer Vision</span>
+    </div>
+  </div>
+
+  <div class="project-meta-sidebar">
+    <div class="meta-block">
+      <p class="meta-label">My Role</p>
+      <p class="meta-value">Design Lead</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Timeline</p>
+      <p class="meta-value">Nov 2024-Oct 2025</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Team</p>
+      <p class="meta-value">Ferrari Huang, Deniz Aydemir, Romme te Velde, Simone Erba, Mattie Consani, Ase Haatveit, Titus Venverloo, Fabio Duarte</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Location</p>
+      <p class="meta-value">Amsterdam, London, Boston, Laval</p>
+    </div>
+  </div>
+</header>
+
+<div class="hero-image">
+  <img src="../assets/projects/sensing-garden/home-sg.png" alt="Sensing Garden device">
+</div>
+
+<div class="project-content">
+
+  <nav class="content-nav" aria-label="Page sections">
+    <p class="content-nav-title">Contents</p>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#challenge">Challenge</a></li>
+      <li><a href="#outcome">Outcome</a></li>
+      <li><a href="#impact">Impact</a></li>
+    </ul>
+  </nav>
+
+  <div class="project-body">
+
+    <div class="content-block" id="overview">
+      <span class="block-label">Overview</span>
+      <h2 class="block-h2">How might we monitor insect biodiversity at a global scale — accessibly and in real time?</h2>
+      <div class="block-body">
+        <p>
+          The loss of biodiversity is a global crisis with profound ecological and economic consequences.
+          Among the numerous threats, the rapid decline in insect populations is particularly alarming —
+          insects are essential to pollination, nutrient cycling, and as a food source for other species.
+        </p>
+        <p> 
+          With a computer vision model capable of identifying insect species at a scale more
+          than 60 times greater than existing models, an open image dataset, and recent
+          improvements to the YOLO architecture, Sensing Garden offers a fast, open-access method for
+          visual AI monitoring of insect species across climatic regions.
+        </p>
+      </div>
+    </div>
+
+    <div class="content-block" id="challenge">
+      <span class="block-label">The Challenge</span>
+      <h2 class="block-h2">Balancing technical requirements, harsh environments, and insect welfare.</h2>
+      <div class="block-body">
+        <p>
+          Designing a device for real-world ecological monitoring meant reconciling competing constraints —
+          the sensor hardware needed for accurate detection, the physical conditions of outdoor deployment,
+          and the practical realities of community use without technical expertise.
+        </p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <div class="step-content">
+            <h4>Survive the outdoors</h4>
+            <p>Weatherproof across humidity, rain, and temperature variance without compromising sensor performance.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <div class="step-content">
+            <h4>Passive airflow to cool hardware components</h4>
+            <p>Allow air to pass through the enclosure while preventing insects from entering and keeping water out.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">03</span>
+          <div class="step-content">
+            <h4>Non-expert installation</h4>
+            <p>Enable community members around the world to deploy the device independently, without technical support.</p>
+          </div>
+        </div>
+      </div>
+      <div class="media-full">
+        <img src="../assets/projects/sensing-garden/sg-0.jpg" alt="Sensing Garden initial sketches">
+      </div>
+
+    </div>
+
+    <div class="content-block" id="outcome">
+      <span class="block-label">Outcome</span>
+      <h2 class="block-h2">A deployable sensing device — refined across two iterations.</h2>
+      <div class="block-body">
+        <p>
+          Two design iterations optimised 3D printing time and ease of assembly, while integrating expanded
+          hardware capabilities with a new camera module. The final device is tripod-compatible for flexible,
+          optimal placement in the field.
+        </p>
+      </div>
+
+      <div class="media-2col">
+        <div class="media-2col-item">
+          <img src="../assets/projects/sensing-garden/sg-01.jpeg" alt="Sensing Garden v1">
+        </div>
+        <div class="media-2col-item">
+          <img src="../assets/projects/sensing-garden/sg-02.png" alt="Sensing Garden v2">
+        </div>
+      </div>
+    </div>
+
+    <div class="content-block" id="impact">
+      <span class="block-label">Impact</span>
+      <h2 class="block-h2">Deployed across 4 cities, with hands-on research in Amsterdam schools.</h2>
+      <div class="block-body">
+        <p>
+          The Sensing Garden has been deployed in four cities, bringing real-time insect biodiversity
+          monitoring to urban environments. In Amsterdam, student workshops gave young researchers the tools
+          to run their own experiments and investigations into urban biodiversity — making ecological
+          science accessible and participatory.
+        </p>
+      </div>
+      <div class="media-full">
+        <img src="../assets/projects/sensing-garden/sg-03.jpg" alt="Camera view">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="project-nav">
+  <a href="heartofvalleysdelight.html" class="project-nav-item project-nav-prev">
+    <p class="project-nav-label">← Previous</p>
+    <h3 class="project-nav-title">Heart of Valley's Delight</h3>
+    <p class="project-nav-desc">Biological design, social impact</p>
+  </a>
+  <a href="vleur.html" class="project-nav-item project-nav-next">
+    <p class="project-nav-label">Next →</p>
+    <h3 class="project-nav-title">Vleur</h3>
+    <p class="project-nav-desc">Transforming food waste into personal care products</p>
+  </a>
+</div>
+
+<footer>
+  <span class="footer-sig">Designed &amp; developed with &#x2764; + &#x263B; by Sabrina Tian 2026</span>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/sabrinactian/" target="_blank">LinkedIn ↗</a>
+    <a href="https://www.instagram.com/bysabrinatian/" target="_blank">Instagram ↗</a>
+    <a href="mailto:sabrina.c.tian@gmail.com">Email ↗</a>
+  </div>
+</footer>
+
+<script src="../scripts/main.js"></script>
+</body>
+</html>

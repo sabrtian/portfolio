@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+<title>Redesigning Meat — Sabrina Tian</title>
+<link rel="stylesheet" href="../styles/tokens.css">
+<link rel="stylesheet" href="../styles/base.css">
+<link rel="stylesheet" href="../styles/project.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Sabrina Tian</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Work</a></li>
+    <li><a href="../about.html">About</a></li>
+    <li><a href="mailto:sabrina.c.tian@gmail.com">Contact ↗</a></li>
+  </ul>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"><span class="theme-icon-moon">☽</span><span class="theme-icon-sun">☀</span></button>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html" onclick="toggleMenu()">Work</a>
+  <a href="../about.html" onclick="toggleMenu()">About</a>
+  <a href="mailto:sabrina.c.tian@gmail.com" onclick="toggleMenu()">Contact ↗</a>
+</div>
+
+<header class="project-header">
+  <div>
+    <a href="../index.html" class="back-link">← All work</a>
+    <span class="project-eyebrow">Design 21 — University of Pennsylvania</span>
+    <h1 class="project-h1"><em>Redesigning</em><br>Meat</h1>
+    <p class="project-intro">
+      How can we create beef without cows? How can we rethink the ways we manage waste?
+      How can we redesign our food systems to be more sustainable and conscious of the issues
+      present within it? A speculative design project reimagining meat production through
+      the lens of agricultural and food waste.
+    </p>
+    <div class="project-tags-row">
+      <span class="ptag craft">Craft</span>
+      <span class="ptag research">Research</span>
+    </div>
+  </div>
+
+  <div class="project-meta-sidebar">
+    <div class="meta-block">
+      <p class="meta-label">My Role</p>
+      <p class="meta-value">Speculative Design & Research</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Timeline</p>
+      <p class="meta-value">Fall 2020 — 3 weeks</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Team</p>
+      <p class="meta-value">Orkan Telhan (Instructor)</p>
+    </div>
+    <div class="meta-block">
+      <p class="meta-label">Location</p>
+      <p class="meta-value">Philadelphia</p>
+    </div>
+  </div>
+</header>
+
+<div class="hero-image">
+  <img src="../assets/projects/redesigningmeat/meat-timeline.png" alt="Redesigning Meat — timeline">
+</div>
+
+<div class="project-content">
+
+  <nav class="content-nav" aria-label="Page sections">
+    <p class="content-nav-title">Contents</p>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#challenge">Challenge</a></li>
+      <li><a href="#outcome">Outcome</a></li>
+      <li><a href="#results">Results</a></li>
+    </ul>
+  </nav>
+
+  <div class="project-body">
+
+    <div class="content-block" id="overview">
+      <span class="block-label">Overview</span>
+      <h2 class="block-h2">Almost 30% of the world's ice-free land is used to raise livestock.</h2>
+      <div class="block-body">
+        <p>
+          Livestock causes four-fifths of deforestation in the Amazon Rainforest, and cattle
+          alone produces 6% of global greenhouse gas emissions. The American food system wastes
+          40% of its food — yet continues to dedicate enormous land, water, and energy resources
+          to meat production.
+        </p>
+        <p>
+          Two solutions currently exist — plant-based meat and lab-grown meat — but both have
+          significant limitations in scale, cost, and consumer acceptance. This project asks:
+          what else is possible?
+        </p>
+      </div>
+    </div>
+
+    <div class="content-block" id="challenge">
+      <span class="block-label">The Challenge</span>
+      <h2 class="block-h2">Existing alternatives to conventional meat each carry their own costs.</h2>
+      <div class="block-body">
+        <p>
+          Plant-based meat relies on highly processed ingredients and often fails to replicate
+          the nutritional profile and texture of animal protein. Lab-grown meat — cultivated
+          from animal cells in bioreactors — is promising but currently prohibitively expensive
+          and energy-intensive at scale.
+        </p>
+        <p>
+          Both alternatives still depend on agricultural inputs and don't directly address
+          the parallel crisis of food and agricultural waste, which represents a massive
+          untapped resource.
+        </p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <div class="step-content">
+            <h4>Environmental impact</h4>
+            <p>30% of ice-free land for livestock; 6% of global GHG from cattle; 4/5 of Amazon deforestation.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <div class="step-content">
+            <h4>Waste paradox</h4>
+            <p>40% of American food is wasted, while vast resources are spent growing new food — including livestock feed.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">03</span>
+          <div class="step-content">
+            <h4>Alternative limitations</h4>
+            <p>Plant-based and lab-grown meats face scale, cost, and acceptance barriers that make near-term mass adoption unlikely.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-block" id="outcome">
+      <span class="block-label">Outcome</span>
+      <h2 class="block-h2">Lab-grown meat from agricultural waste, food waste, and plastics.</h2>
+      <div class="block-body">
+        <p>
+          The speculative proposal: growing lab-made meat from carbon and fat cells found in
+          agricultural waste, food waste, and even plastics. Rather than requiring dedicated
+          land and feed, this system would close the loop between what we discard and what
+          we consume — treating waste streams as raw material for nutrition.
+        </p>
+        <p>
+          As a speculative design project, Redesigning Meat aims to rethink how we can consume
+          meat in the context of environmental sustainability — not by eliminating meat, but
+          by fundamentally changing where it comes from.
+        </p>
+      </div>
+    </div>
+
+    <div class="content-block" id="results">
+      <span class="block-label">Results</span>
+      <h2 class="block-h2">Speculative design as a tool for reimagining food systems.</h2>
+      <div class="block-body">
+        <p>
+          The project positions speculative design as an active participant in food systems
+          thinking — not proposing a ready-to-build solution, but making a specific future
+          imaginable and arguable. By grounding the proposal in real waste data and existing
+          cellular agriculture technology, it stays just inside the boundary of the plausible.
+        </p>
+        <p>
+          This project sits within a broader body of work on biological and food systems design,
+          alongside <a href="scoby.html">SCOBY: Experiment & Tea Bags</a>, <a href="heartofvalleysdelight.html">Heart of Valley's Delight</a>,
+          and <a href="futureofwaste.html">The Future of Waste</a>.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="project-nav">
+  <a href="heartofvalleysdelight.html" class="project-nav-item project-nav-prev">
+    <p class="project-nav-label">← Previous</p>
+    <h3 class="project-nav-title">Heart of Valley's Delight</h3>
+    <p class="project-nav-desc">Biological design, social impact</p>
+  </a>
+  <a href="breakfast.html" class="project-nav-item project-nav-next">
+    <p class="project-nav-label">Next →</p>
+    <h3 class="project-nav-title">Politics of Breakfast</h3>
+    <p class="project-nav-desc">Publication design & design theory</p>
+  </a>
+</div>
+
+<footer>
+  <span class="footer-sig">Designed &amp; developed with &#x2764; + &#x263B; by Sabrina Tian 2026</span>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/sabrinactian/" target="_blank">LinkedIn ↗</a>
+    <a href="https://www.instagram.com/bysabrinatian/" target="_blank">Instagram ↗</a>
+    <a href="mailto:sabrina.c.tian@gmail.com">Email ↗</a>
+  </div>
+</footer>
+
+<script src="../scripts/main.js"></script>
+</body>
+</html>

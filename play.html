@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+<title>Play — Sabrina Tian</title>
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/play.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Sabrina Tian</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Work</a></li>
+    <li><a href="play.html" class="active">Play</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="mailto:sabrina.c.tian@gmail.com">Contact ↗</a></li>
+  </ul>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"><span class="theme-icon-moon">☽</span><span class="theme-icon-sun">☀</span></button>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="toggleMenu()">Work</a>
+  <a href="play.html" onclick="toggleMenu()">Play</a>
+  <a href="about.html" onclick="toggleMenu()">About</a>
+  <a href="mailto:sabrina.c.tian@gmail.com" onclick="toggleMenu()">Contact ↗</a>
+</div>
+
+<main class="play-page">
+  <div class="play-canvas">
+
+    <!-- Header -->
+    <header class="play-header">
+      <h1 class="play-title">Side projects &amp; <em>tinkering</em></h1>
+      <p class="play-subtitle">
+        Things I make when I'm curious.<br>
+        Not client work. Not deliverables.<br>
+        Just exploring.
+      </p>
+    </header>
+
+    <!-- Ambient canvas note -->
+    <span class="canvas-note" style="left: 2.5rem; top: 42%; transform: rotate(-90deg); transform-origin: left center;">
+      drag to explore
+    </span>
+
+    <!-- Connector SVG (drawn by JS) -->
+    <svg class="connector-svg" aria-hidden="true">
+      <!-- Lines drawn dynamically by play.js -->
+    </svg>
+
+    <!-- ════════════════════════════════════════
+         FLOATING OBJECTS
+         
+         HOW TO ADD A NEW PROJECT:
+         1. Copy a .play-object block
+         2. Change the emoji/icon in .object-icon-placeholder
+         3. Fill in the .object-type, .object-name, .object-desc
+         4. Set .status-dot class: active / ongoing / archived
+         5. Change href to your project page or external link
+         6. Add a new position to scatterPositions[] in play.js
+         ════════════════════════════════════════ -->
+    <div class="objects-field" id="objectsField" aria-label="Side projects">
+
+      <!-- ── OBJECT 1 ── -->
+      <a href="#" class="play-object" aria-label="Bacterial Cellulose experiments">
+        <div class="object-card">
+          <div class="object-icon">
+            <!-- Replace with <img src="assets/icons/cellulose.png"> when ready -->
+            <span class="object-icon-placeholder">🧫</span>
+          </div>
+          <div class="object-card-inner">
+            <p class="object-type">Materials research</p>
+            <p class="object-name">Bacterial Cellulose Diaries</p>
+            <p class="object-desc">Growing SCOBY into packaging, watching it fail, trying again.</p>
+            <span class="object-status">
+              <span class="status-dot ongoing"></span>
+              ongoing
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ── OBJECT 2 ── -->
+      <a href="#" class="play-object" aria-label="Generative pattern tools">
+        <div class="object-card">
+          <div class="object-icon">
+            <span class="object-icon-placeholder">🌀</span>
+          </div>
+          <div class="object-card-inner">
+            <p class="object-type">Creative coding</p>
+            <p class="object-name">Generative Pattern Tools</p>
+            <p class="object-desc">p5.js scripts for making organic, irregular patterns from sensor data.</p>
+            <span class="object-status">
+              <span class="status-dot active"></span>
+              active
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ── OBJECT 3 ── -->
+      <a href="#" class="play-object" aria-label="Urban foraging map">
+        <div class="object-card">
+          <div class="object-icon">
+            <span class="object-icon-placeholder">🗺️</span>
+          </div>
+          <div class="object-card-inner">
+            <p class="object-type">Mapping / data</p>
+            <p class="object-name">Tokyo Urban Foraging Map</p>
+            <p class="object-desc">Documenting edible plants across Tokyo neighborhoods using GIS.</p>
+            <span class="object-status">
+              <span class="status-dot archived"></span>
+              archived
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ── OBJECT 4 ── -->
+      <a href="#" class="play-object" aria-label="Soft robotics for kids">
+        <div class="object-card">
+          <div class="object-icon">
+            <span class="object-icon-placeholder">🤖</span>
+          </div>
+          <div class="object-card-inner">
+            <p class="object-type">Soft robotics</p>
+            <p class="object-name">Pneumatic Creature Kits</p>
+            <p class="object-desc">Soft robots for children's workshops — inflate to move, squeeze to interact.</p>
+            <span class="object-status">
+              <span class="status-dot archived"></span>
+              archived
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ── OBJECT 5 ── -->
+      <a href="#" class="play-object" aria-label="Fermentation tracker app">
+        <div class="object-card">
+          <div class="object-icon">
+            <span class="object-icon-placeholder">🫙</span>
+          </div>
+          <div class="object-card-inner">
+            <p class="object-type">App prototype</p>
+            <p class="object-name">Fermentation Journal</p>
+            <p class="object-desc">A Figma prototype for tracking home ferments — sourdough, miso, kimchi.</p>
+            <span class="object-status">
+              <span class="status-dot active"></span>
+              active
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ── OBJECT 6 ── -->
+      <a href="#" class="play-object" aria-label="Climate animation">
+        <div class="object-card">
+          <div class="object-icon">
+            <span class="object-icon-placeholder">🌊</span>
+          </div>
+          <div class="object-card-inner">
+            <p class="object-type">Animation</p>
+            <p class="object-name">Poldergeist</p>
+            <p class="object-desc">Hand-drawn animation on how the Netherlands defends against rising seas.</p>
+            <span class="object-status">
+              <span class="status-dot archived"></span>
+              archived — featured on documentary
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ── OBJECT 7 ── -->
+      <a href="#" class="play-object" aria-label="Illustrated zine">
+        <div class="object-card">
+          <div class="object-icon">
+            <span class="object-icon-placeholder">📖</span>
+          </div>
+          <div class="object-card-inner">
+            <p class="object-type">Publication</p>
+            <p class="object-name">Born in China, Grown in America</p>
+            <p class="object-desc">Risograph-printed zine on identity, food, and belonging. Senior thesis.</p>
+            <span class="object-status">
+              <span class="status-dot archived"></span>
+              archived
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ── OBJECT 8 ── -->
+      <a href="#" class="play-object" aria-label="Sensor sketches">
+        <div class="object-card">
+          <div class="object-icon">
+            <span class="object-icon-placeholder">📡</span>
+          </div>
+          <div class="object-card-inner">
+            <p class="object-type">Arduino / sensors</p>
+            <p class="object-name">Tactile Language Learning</p>
+            <p class="object-desc">Arduino + ML glove for learning tonal languages through vibration patterns.</p>
+            <span class="object-status">
+              <span class="status-dot archived"></span>
+              archived
+            </span>
+          </div>
+        </div>
+      </a>
+
+    </div><!-- /objects-field -->
+
+    <!-- Bottom-right ambient note -->
+    <div class="play-about">
+      <p>A place for experiments, dead ends, and things that aren't quite finished yet. Updated sporadically.</p>
+    </div>
+
+  </div><!-- /play-canvas -->
+</main>
+
+<!-- Drag hint (auto-fades) -->
+<div class="drag-hint" aria-hidden="true">
+  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+    <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.2"/>
+  </svg>
+  Drag objects to explore
+</div>
+
+<footer>
+  <span class="footer-sig">Designed &amp; developed by Sabrina Tian — 2025</span>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/sabrinactian/" target="_blank">LinkedIn ↗</a>
+    <a href="https://www.instagram.com/bysabrinatian/" target="_blank">Instagram ↗</a>
+    <a href="mailto:sabrina.c.tian@gmail.com">Email ↗</a>
+  </div>
+</footer>
+
+<script src="scripts/main.js"></script>
+<script src="scripts/play.js"></script>
+
+
+</body>
+</html>

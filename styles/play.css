@@ -1,0 +1,319 @@
+/* ═══════════════════════════════════════════════════════════════
+   PLAY PAGE — play.css
+   Personal internet space — object-based, non-linear, exploratory
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── PAGE LAYOUT ─────────────────────────────────────────────── */
+.play-page {
+  min-height: 100vh;
+  padding-top: var(--nav-height);
+  overflow: hidden;
+  position: relative;
+}
+
+/* ── CANVAS AREA ─────────────────────────────────────────────── */
+.play-canvas {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - var(--nav-height));
+  padding: 3rem 2.5rem 6rem;
+  cursor: default;
+}
+
+/* Large ambient background text */
+.play-canvas::before {
+  content: 'tinkering';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 15vw, 14rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--color-line);
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+  letter-spacing: -0.03em;
+  z-index: 0;
+}
+
+/* ── PAGE HEADER ─────────────────────────────────────────────── */
+.play-header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-line);
+  margin-bottom: 0;
+}
+
+.play-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+.play-title em { font-style: italic; color: var(--color-accent); }
+
+.play-subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+  max-width: 30ch;
+  text-align: right;
+  line-height: 1.7;
+}
+
+/* ── FLOATING OBJECTS GRID ───────────────────────────────────── */
+/* Desktop: scattered, feels placed by hand */
+.objects-field {
+  position: relative;
+  min-height: 75vh;
+  margin-top: 2rem;
+  z-index: 2;
+}
+
+/* Each object is absolutely positioned on desktop */
+.play-object {
+  position: absolute;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.35s var(--ease-out), z-index 0s;
+  will-change: transform;
+  z-index: 2;
+}
+
+.play-object:hover {
+  z-index: 10;
+  transform: scale(1.04) !important; /* override inline positioning */
+}
+
+/* ── OBJECT CARD ─────────────────────────────────────────────── */
+.object-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-line);
+  width: 220px;
+  transition: box-shadow 0.3s var(--ease-out), border-color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.play-object:hover .object-card {
+  box-shadow: 0 8px 32px rgba(26,24,20,0.10);
+  border-color: rgba(26,24,20,0.22);
+}
+
+.object-icon {
+  width: 100%;
+  aspect-ratio: 1;
+  background: var(--color-paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  overflow: hidden;
+  position: relative;
+  transition: background 0.3s;
+}
+
+.play-object:hover .object-icon {
+  background: var(--color-surface);
+}
+
+.object-icon img {
+  width: 65%;
+  height: 65%;
+  object-fit: contain;
+  display: block;
+  /* placeholder style until icons are added */
+}
+
+.object-icon-placeholder {
+  font-size: 2.5rem;
+  line-height: 1;
+  user-select: none;
+}
+
+/* Subtle rotation on card (set inline per card for variety) */
+.object-card-inner {
+  padding: 0.9rem 1rem 1rem;
+  border-top: 1px solid var(--color-line);
+}
+
+.object-type {
+  font-family: var(--font-mono);
+  font-size: 0.5rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+  margin-bottom: 0.3rem;
+}
+
+.object-name {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.3;
+  color: var(--color-ink);
+  margin-bottom: 0.2rem;
+}
+
+.object-desc {
+  font-size: 0.78rem;
+  color: var(--color-ink-muted);
+  line-height: 1.5;
+}
+
+/* Status dot */
+.object-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.5rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+}
+
+.status-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-ink-muted);
+  flex-shrink: 0;
+}
+
+.status-dot.active { background: #5a9b6e; animation: pulse 2s ease-in-out infinite; }
+.status-dot.archived { background: var(--color-tertiary); }
+.status-dot.ongoing { background: var(--color-accent); }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.8); }
+}
+
+/* ── SCATTERED CONNECTORS (decorative lines between objects) ─── */
+.connector-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.18;
+}
+
+/* ── STRAY TEXT FRAGMENTS (ambient labels on canvas) ────────── */
+.canvas-note {
+  position: absolute;
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+  opacity: 0.5;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+/* ── DRAG HINT ───────────────────────────────────────────────── */
+.drag-hint {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+  background: var(--color-bg);
+  border: 1px solid var(--color-line);
+  padding: 0.5rem 1.2rem;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  opacity: 1;
+  transition: opacity 1s ease;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.drag-hint.faded { opacity: 0; }
+
+/* ── ABOUT THIS SPACE ────────────────────────────────────────── */
+.play-about {
+  position: absolute;
+  bottom: 3rem;
+  right: 2.5rem;
+  max-width: 260px;
+  z-index: 2;
+}
+
+.play-about p {
+  font-size: 0.85rem;
+  color: var(--color-ink-muted);
+  line-height: 1.7;
+  font-style: italic;
+}
+
+/* ── MOBILE: LINEAR GRID ─────────────────────────────────────── */
+@media (max-width: 900px) {
+
+  .play-canvas::before { display: none; }
+
+  .play-header {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+
+  .play-subtitle { text-align: left; }
+
+  /* Switch to grid layout on mobile */
+  .objects-field {
+    position: static;
+    min-height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .play-object {
+    position: static !important;
+    transform: none !important;
+  }
+
+  .play-object:hover {
+    transform: translateY(-2px) !important;
+  }
+
+  .object-card { width: 100%; }
+
+  .connector-svg,
+  .canvas-note,
+  .play-about { display: none; }
+
+  .drag-hint { display: none; }
+}
+
+@media (max-width: 540px) {
+  .objects-field { grid-template-columns: 1fr; }
+  .play-canvas { padding: 2rem 1.25rem 4rem; }
+  .play-header { padding-bottom: 1.5rem; }
+}

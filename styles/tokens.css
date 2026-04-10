@@ -1,0 +1,87 @@
+/* ═══════════════════════════════════════════════════════════════
+   SABRINA TIAN PORTFOLIO — DESIGN TOKENS
+   
+   This is the single file to change fonts and colors sitewide.
+   All other CSS files import these variables.
+   ═══════════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&display=swap');
+
+:root {
+
+  /* ── COLORS ──────────────────────────────────────────────────── */
+  /* Change these to rebrand the whole site */
+
+  --color-bg:          #fbf7f0;   /* page background */
+  --color-surface:     #F8F6F2;   /* hover states, subtle fills */
+  --color-paper:       #F8F6F2;   /* card backgrounds, panels */
+
+  --color-ink:         #1A1814;   /* primary text */
+  --color-ink-light:   #3D3A34;   /* body text */
+  --color-ink-muted:   #7A7570;   /* captions, labels, secondary */
+
+  --color-accent:      #DE006B;   /* hot pink — primary accent (links, tags, arrows) */
+  --color-accent-soft: #8F0045;   /* darker pink for hover */
+
+  --color-link:        var(--color-accent);  /* hyperlink text color */
+
+  --color-tag-physical: #E2561B;  /* rust — physical tags */
+  --color-tag-software: #0076B6;  /* blue — software tags */
+  --color-tag-research: #BD2FBD;  /* magenta — research tags */
+  --color-tag-craft:    #187D88;  /* teal — craft tags */
+
+  --color-line:        rgba(26, 24, 20, 0.12);  /* borders */
+
+
+  /* ── TYPOGRAPHY ──────────────────────────────────────────────── */
+  /* Swap font names here to change sitewide */
+
+  --font-display:  'Fraunces', Georgia, serif;       /* headlines */
+  --font-body:     'Instrument Serif', Georgia, serif; /* paragraphs */
+  --font-mono:     'DM Mono', 'Courier New', monospace; /* labels, tags, UI text */
+
+
+  /* ── SPACING ─────────────────────────────────────────────────── */
+  --space-xs:   0.5rem;
+  --space-sm:   1rem;
+  --space-md:   1.5rem;
+  --space-lg:   2.5rem;
+  --space-xl:   4rem;
+  --space-2xl:  6rem;
+
+  --nav-height: 4rem;
+
+
+  /* ── RADIUS ──────────────────────────────────────────────────── */
+  --radius-sm:  2px;
+  --radius-pill: 100px;
+
+
+  /* ── TRANSITIONS ─────────────────────────────────────────────── */
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --transition: 0.25s var(--ease-out);
+
+}
+
+/* ── DARK MODE ───────────────────────────────────────────────── */
+[data-theme="dark"] {
+  --color-bg:          #161414;
+  --color-surface:     #1F1C1C;
+  --color-paper:       #1F1C1C;
+
+  --color-ink:         #F5F1EA;
+  --color-ink-light:   #D9D3C9;
+  --color-ink-muted:   #a8a09b;
+
+  -color-accent:      #F21881;   /* hot pink — primary accent (links, tags, arrows) */
+  --color-accent-soft: #FF60AC;   /* darker pink for hover */
+
+  --color-link:        var(--color-accent);  /* hyperlink text color */
+
+  --color-tag-physical: #ff7d45;  /* rust — physical tags */
+  --color-tag-software: #00a6ff;  /* blue — software tags */
+  --color-tag-research: #e931e9;  /* magenta — research tags */
+  --color-tag-craft:    #0fcee3;  /* teal — craft tags */
+
+  --color-line:        rgba(245, 241, 234, 0.12);
+}
