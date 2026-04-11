@@ -190,7 +190,7 @@ function buildCard(project) {
       <h3 class="project-title">${project.title}</h3>
       <p class="project-subtitle">${project.sub}</p>
     </div>
-    ${noLink ? '' : '<span class="project-arrow" aria-hidden="true">↗</span>'}
+    ${noLink ? '' : '<span class="project-arrow" aria-hidden="true">&#x2197;&#xFE0E;</span>'}
   `;
   return a;
 }
