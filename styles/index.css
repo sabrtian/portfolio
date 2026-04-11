@@ -719,6 +719,12 @@
   .about-strip-right { padding: 2rem 1.25rem; }
   .about-strip-left { padding: 2rem 1.25rem; }
   .project-body { padding: 1.25rem 1.25rem 2rem; }
+  .project-meta {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .project-meta-left { width: 100%; }
+  .project-meta-right { width: 100%; }
 }
 
 @media (max-width: 480px) {

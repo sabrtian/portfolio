@@ -5,7 +5,7 @@
 
 /* ── RESET ────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; font-variant-emoji: text; }
 
 a { color: var(--color-link); }
 a:hover { color: var(--color-accent-soft); }
@@ -181,6 +181,18 @@ footer {
 .ptag.software { border-color: var(--color-tag-software); color: var(--color-tag-software); }
 .ptag.research { border-color: var(--color-tag-research); color: var(--color-tag-research); }
 .ptag.craft   { border-color: var(--color-tag-craft);    color: var(--color-tag-craft); }
+
+/* ── EMOJI → TEXT GLYPH ──────────────────────────────────────── */
+/* Prevents ↗ ☽ ☀ ❤ ☻ from rendering as color emoji on mobile */
+.theme-icon-moon,
+.theme-icon-sun,
+.project-arrow,
+.nav-links a,
+.mobile-menu a,
+.footer-links a,
+.footer-sig {
+  font-variant-emoji: text;
+}
 
 /* ── THEME TOGGLE ────────────────────────────────────────────── */
 .theme-toggle {
