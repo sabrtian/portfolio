@@ -234,6 +234,9 @@ const SCATTER_OFFSETS = [
 ];
 
 (function initArchivePreview() {
+  // Hover previews are mouse-only — skip on touch devices
+  if (window.matchMedia('(hover: none)').matches) return;
+
   const preview = document.createElement('div');
   preview.className = 'archive-preview';
   const img = document.createElement('img');
