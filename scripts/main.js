@@ -113,8 +113,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
       box-shadow: 0 4px 24px rgba(0,0,0,0.2);
     `;
     el.innerHTML = `
-      Hey! This portfolio was hand-coded with care.<br>
-      Please reach out if you'd like to collaborate 🌱<br>
+      Reach out if you'd like to collaborate 🌱<br>
       <a href="mailto:sabrina.c.tian@gmail.com" style="color:#B85C38;text-decoration:none;">
         sabrina.c.tian@gmail.com
       </a>
