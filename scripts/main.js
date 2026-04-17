@@ -80,7 +80,8 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if (forbidden) e.preventDefault();
   });
 
-  // Detect if devtools is open and show a gentle message
+  // Detect if devtools is open and show a gentle message (desktop only)
+  if (window.matchMedia('(hover: none)').matches) return;
   let devtoolsOpen = false;
   const threshold = 160;
 
