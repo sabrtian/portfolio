@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://sabrinatian.com/styles/tokens.css)",
-      "Bash(git commit -m ':*)"
+      "Bash(git commit -m ':*)",
+      "Bash(git commit:*)"
     ]
   }
 }
